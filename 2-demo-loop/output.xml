@@ -1,0 +1,2774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180527 00:11:02.792" generator="Robot 2.9.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/gique/Documents/Document/SLIDE/robot framework/robot-demo/2-demo-loop/loop.robot" id="s1" name="Loop">
+<kw type="setup" name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Start Code Loop</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.023" starttime="20180527 00:11:03.021"></status>
+</kw>
+<test id="s1-t1" timeout="30 seconds" name="Calculate_Multiply_02">
+<kw type="setup" name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n======================\n</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.026" starttime="20180527 00:11:03.025"></status>
+</kw>
+<kw type="for" name="${Number_base} IN RANGE [ 2 | 12 ]">
+<kw type="foritem" name="${Number_base} = 2">
+<kw name="KW_LoopMultiply">
+<doc>Keyword Set Variable</doc>
+<arguments>
+<arg>${Number_base}</arg>
+</arguments>
+<kw type="for" name="${Count_Multiply} IN RANGE [ 1 | 13 ]">
+<kw type="foritem" name="${Count_Multiply} = 1">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.036" level="INFO">${Formula_Multiply} = 2</msg>
+<status status="PASS" endtime="20180527 00:11:03.036" starttime="20180527 00:11:03.032"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.040" starttime="20180527 00:11:03.038"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.040" starttime="20180527 00:11:03.030"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 2">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.045" level="INFO">${Formula_Multiply} = 4</msg>
+<status status="PASS" endtime="20180527 00:11:03.045" starttime="20180527 00:11:03.041"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.049" starttime="20180527 00:11:03.046"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.049" starttime="20180527 00:11:03.041"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 3">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.055" level="INFO">${Formula_Multiply} = 6</msg>
+<status status="PASS" endtime="20180527 00:11:03.055" starttime="20180527 00:11:03.051"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.061" starttime="20180527 00:11:03.056"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.061" starttime="20180527 00:11:03.050"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 4">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.067" level="INFO">${Formula_Multiply} = 8</msg>
+<status status="PASS" endtime="20180527 00:11:03.067" starttime="20180527 00:11:03.062"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.071" starttime="20180527 00:11:03.068"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.072" starttime="20180527 00:11:03.062"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 5">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.079" level="INFO">${Formula_Multiply} = 10</msg>
+<status status="PASS" endtime="20180527 00:11:03.079" starttime="20180527 00:11:03.075"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.083" starttime="20180527 00:11:03.080"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.084" starttime="20180527 00:11:03.074"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 6">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.090" level="INFO">${Formula_Multiply} = 12</msg>
+<status status="PASS" endtime="20180527 00:11:03.091" starttime="20180527 00:11:03.085"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.094" starttime="20180527 00:11:03.091"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.095" starttime="20180527 00:11:03.084"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 7">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.099" level="INFO">${Formula_Multiply} = 14</msg>
+<status status="PASS" endtime="20180527 00:11:03.100" starttime="20180527 00:11:03.096"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.102" starttime="20180527 00:11:03.100"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.102" starttime="20180527 00:11:03.096"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 8">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.107" level="INFO">${Formula_Multiply} = 16</msg>
+<status status="PASS" endtime="20180527 00:11:03.108" starttime="20180527 00:11:03.103"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.116" starttime="20180527 00:11:03.109"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.117" starttime="20180527 00:11:03.103"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 9">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.123" level="INFO">${Formula_Multiply} = 18</msg>
+<status status="PASS" endtime="20180527 00:11:03.124" starttime="20180527 00:11:03.118"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.128" starttime="20180527 00:11:03.125"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.128" starttime="20180527 00:11:03.117"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 10">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.133" level="INFO">${Formula_Multiply} = 20</msg>
+<status status="PASS" endtime="20180527 00:11:03.133" starttime="20180527 00:11:03.130"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.137" starttime="20180527 00:11:03.134"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.138" starttime="20180527 00:11:03.129"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 11">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.145" level="INFO">${Formula_Multiply} = 22</msg>
+<status status="PASS" endtime="20180527 00:11:03.146" starttime="20180527 00:11:03.140"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.150" starttime="20180527 00:11:03.147"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.151" starttime="20180527 00:11:03.139"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 12">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.155" level="INFO">${Formula_Multiply} = 24</msg>
+<status status="PASS" endtime="20180527 00:11:03.155" starttime="20180527 00:11:03.152"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.160" starttime="20180527 00:11:03.156"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.161" starttime="20180527 00:11:03.151"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.162" starttime="20180527 00:11:03.030"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.163" starttime="20180527 00:11:03.027"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n******************\n</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.167" starttime="20180527 00:11:03.164"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.167" starttime="20180527 00:11:03.027"></status>
+</kw>
+<kw type="foritem" name="${Number_base} = 3">
+<kw name="KW_LoopMultiply">
+<doc>Keyword Set Variable</doc>
+<arguments>
+<arg>${Number_base}</arg>
+</arguments>
+<kw type="for" name="${Count_Multiply} IN RANGE [ 1 | 13 ]">
+<kw type="foritem" name="${Count_Multiply} = 1">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.174" level="INFO">${Formula_Multiply} = 3</msg>
+<status status="PASS" endtime="20180527 00:11:03.174" starttime="20180527 00:11:03.170"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.180" starttime="20180527 00:11:03.176"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.181" starttime="20180527 00:11:03.170"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 2">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.187" level="INFO">${Formula_Multiply} = 6</msg>
+<status status="PASS" endtime="20180527 00:11:03.187" starttime="20180527 00:11:03.183"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.191" starttime="20180527 00:11:03.188"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.192" starttime="20180527 00:11:03.182"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 3">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.198" level="INFO">${Formula_Multiply} = 9</msg>
+<status status="PASS" endtime="20180527 00:11:03.199" starttime="20180527 00:11:03.194"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.202" starttime="20180527 00:11:03.200"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.202" starttime="20180527 00:11:03.193"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 4">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.206" level="INFO">${Formula_Multiply} = 12</msg>
+<status status="PASS" endtime="20180527 00:11:03.207" starttime="20180527 00:11:03.203"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.212" starttime="20180527 00:11:03.208"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.213" starttime="20180527 00:11:03.203"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 5">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.219" level="INFO">${Formula_Multiply} = 15</msg>
+<status status="PASS" endtime="20180527 00:11:03.220" starttime="20180527 00:11:03.215"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.222" starttime="20180527 00:11:03.220"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.223" starttime="20180527 00:11:03.213"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 6">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.231" level="INFO">${Formula_Multiply} = 18</msg>
+<status status="PASS" endtime="20180527 00:11:03.231" starttime="20180527 00:11:03.226"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.235" starttime="20180527 00:11:03.231"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.235" starttime="20180527 00:11:03.224"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 7">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.239" level="INFO">${Formula_Multiply} = 21</msg>
+<status status="PASS" endtime="20180527 00:11:03.240" starttime="20180527 00:11:03.236"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.245" starttime="20180527 00:11:03.241"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.246" starttime="20180527 00:11:03.236"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 8">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.252" level="INFO">${Formula_Multiply} = 24</msg>
+<status status="PASS" endtime="20180527 00:11:03.252" starttime="20180527 00:11:03.247"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.255" starttime="20180527 00:11:03.253"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.255" starttime="20180527 00:11:03.246"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 9">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.263" level="INFO">${Formula_Multiply} = 27</msg>
+<status status="PASS" endtime="20180527 00:11:03.263" starttime="20180527 00:11:03.257"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.268" starttime="20180527 00:11:03.264"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.268" starttime="20180527 00:11:03.256"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 10">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.272" level="INFO">${Formula_Multiply} = 30</msg>
+<status status="PASS" endtime="20180527 00:11:03.272" starttime="20180527 00:11:03.269"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.277" starttime="20180527 00:11:03.273"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.278" starttime="20180527 00:11:03.268"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 11">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.285" level="INFO">${Formula_Multiply} = 33</msg>
+<status status="PASS" endtime="20180527 00:11:03.285" starttime="20180527 00:11:03.280"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.289" starttime="20180527 00:11:03.286"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.289" starttime="20180527 00:11:03.279"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 12">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.297" level="INFO">${Formula_Multiply} = 36</msg>
+<status status="PASS" endtime="20180527 00:11:03.297" starttime="20180527 00:11:03.291"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.301" starttime="20180527 00:11:03.299"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.302" starttime="20180527 00:11:03.290"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.302" starttime="20180527 00:11:03.169"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.303" starttime="20180527 00:11:03.168"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n******************\n</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.305" starttime="20180527 00:11:03.303"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.306" starttime="20180527 00:11:03.168"></status>
+</kw>
+<kw type="foritem" name="${Number_base} = 4">
+<kw name="KW_LoopMultiply">
+<doc>Keyword Set Variable</doc>
+<arguments>
+<arg>${Number_base}</arg>
+</arguments>
+<kw type="for" name="${Count_Multiply} IN RANGE [ 1 | 13 ]">
+<kw type="foritem" name="${Count_Multiply} = 1">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.315" level="INFO">${Formula_Multiply} = 4</msg>
+<status status="PASS" endtime="20180527 00:11:03.315" starttime="20180527 00:11:03.309"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.319" starttime="20180527 00:11:03.316"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.319" starttime="20180527 00:11:03.308"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 2">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.325" level="INFO">${Formula_Multiply} = 8</msg>
+<status status="PASS" endtime="20180527 00:11:03.325" starttime="20180527 00:11:03.320"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.330" starttime="20180527 00:11:03.326"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.330" starttime="20180527 00:11:03.320"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 3">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.336" level="INFO">${Formula_Multiply} = 12</msg>
+<status status="PASS" endtime="20180527 00:11:03.337" starttime="20180527 00:11:03.332"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.340" starttime="20180527 00:11:03.337"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.341" starttime="20180527 00:11:03.331"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 4">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.349" level="INFO">${Formula_Multiply} = 16</msg>
+<status status="PASS" endtime="20180527 00:11:03.349" starttime="20180527 00:11:03.343"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.352" starttime="20180527 00:11:03.350"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.353" starttime="20180527 00:11:03.342"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 5">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.357" level="INFO">${Formula_Multiply} = 20</msg>
+<status status="PASS" endtime="20180527 00:11:03.358" starttime="20180527 00:11:03.354"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.363" starttime="20180527 00:11:03.359"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.363" starttime="20180527 00:11:03.353"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 6">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.369" level="INFO">${Formula_Multiply} = 24</msg>
+<status status="PASS" endtime="20180527 00:11:03.370" starttime="20180527 00:11:03.365"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.372" starttime="20180527 00:11:03.370"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.373" starttime="20180527 00:11:03.364"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 7">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.380" level="INFO">${Formula_Multiply} = 28</msg>
+<status status="PASS" endtime="20180527 00:11:03.381" starttime="20180527 00:11:03.374"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.384" starttime="20180527 00:11:03.381"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.385" starttime="20180527 00:11:03.373"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 8">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.392" level="INFO">${Formula_Multiply} = 32</msg>
+<status status="PASS" endtime="20180527 00:11:03.393" starttime="20180527 00:11:03.388"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.398" starttime="20180527 00:11:03.395"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.398" starttime="20180527 00:11:03.386"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 9">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.405" level="INFO">${Formula_Multiply} = 36</msg>
+<status status="PASS" endtime="20180527 00:11:03.405" starttime="20180527 00:11:03.400"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.409" starttime="20180527 00:11:03.406"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.410" starttime="20180527 00:11:03.399"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 10">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.417" level="INFO">${Formula_Multiply} = 40</msg>
+<status status="PASS" endtime="20180527 00:11:03.418" starttime="20180527 00:11:03.413"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.423" starttime="20180527 00:11:03.419"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.424" starttime="20180527 00:11:03.411"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 11">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.431" level="INFO">${Formula_Multiply} = 44</msg>
+<status status="PASS" endtime="20180527 00:11:03.432" starttime="20180527 00:11:03.427"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.437" starttime="20180527 00:11:03.433"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.437" starttime="20180527 00:11:03.425"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 12">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.442" level="INFO">${Formula_Multiply} = 48</msg>
+<status status="PASS" endtime="20180527 00:11:03.443" starttime="20180527 00:11:03.438"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.448" starttime="20180527 00:11:03.444"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.448" starttime="20180527 00:11:03.437"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.449" starttime="20180527 00:11:03.308"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.451" starttime="20180527 00:11:03.307"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n******************\n</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.455" starttime="20180527 00:11:03.452"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.455" starttime="20180527 00:11:03.306"></status>
+</kw>
+<kw type="foritem" name="${Number_base} = 5">
+<kw name="KW_LoopMultiply">
+<doc>Keyword Set Variable</doc>
+<arguments>
+<arg>${Number_base}</arg>
+</arguments>
+<kw type="for" name="${Count_Multiply} IN RANGE [ 1 | 13 ]">
+<kw type="foritem" name="${Count_Multiply} = 1">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.467" level="INFO">${Formula_Multiply} = 5</msg>
+<status status="PASS" endtime="20180527 00:11:03.468" starttime="20180527 00:11:03.462"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.471" starttime="20180527 00:11:03.469"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.472" starttime="20180527 00:11:03.461"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 2">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.479" level="INFO">${Formula_Multiply} = 10</msg>
+<status status="PASS" endtime="20180527 00:11:03.479" starttime="20180527 00:11:03.473"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.485" starttime="20180527 00:11:03.480"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.485" starttime="20180527 00:11:03.472"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 3">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.491" level="INFO">${Formula_Multiply} = 15</msg>
+<status status="PASS" endtime="20180527 00:11:03.492" starttime="20180527 00:11:03.487"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.497" starttime="20180527 00:11:03.493"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.498" starttime="20180527 00:11:03.486"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 4">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.503" level="INFO">${Formula_Multiply} = 20</msg>
+<status status="PASS" endtime="20180527 00:11:03.504" starttime="20180527 00:11:03.500"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.508" starttime="20180527 00:11:03.505"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.509" starttime="20180527 00:11:03.499"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 5">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.516" level="INFO">${Formula_Multiply} = 25</msg>
+<status status="PASS" endtime="20180527 00:11:03.517" starttime="20180527 00:11:03.512"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.520" starttime="20180527 00:11:03.518"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.521" starttime="20180527 00:11:03.511"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 6">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.528" level="INFO">${Formula_Multiply} = 30</msg>
+<status status="PASS" endtime="20180527 00:11:03.528" starttime="20180527 00:11:03.523"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.532" starttime="20180527 00:11:03.529"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.533" starttime="20180527 00:11:03.521"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 7">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.539" level="INFO">${Formula_Multiply} = 35</msg>
+<status status="PASS" endtime="20180527 00:11:03.540" starttime="20180527 00:11:03.534"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.545" starttime="20180527 00:11:03.541"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.546" starttime="20180527 00:11:03.534"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 8">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.552" level="INFO">${Formula_Multiply} = 40</msg>
+<status status="PASS" endtime="20180527 00:11:03.553" starttime="20180527 00:11:03.548"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.556" starttime="20180527 00:11:03.553"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.557" starttime="20180527 00:11:03.547"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 9">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.564" level="INFO">${Formula_Multiply} = 45</msg>
+<status status="PASS" endtime="20180527 00:11:03.565" starttime="20180527 00:11:03.559"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.569" starttime="20180527 00:11:03.566"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.569" starttime="20180527 00:11:03.558"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 10">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.575" level="INFO">${Formula_Multiply} = 50</msg>
+<status status="PASS" endtime="20180527 00:11:03.575" starttime="20180527 00:11:03.571"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.581" starttime="20180527 00:11:03.577"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.582" starttime="20180527 00:11:03.570"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 11">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.588" level="INFO">${Formula_Multiply} = 55</msg>
+<status status="PASS" endtime="20180527 00:11:03.588" starttime="20180527 00:11:03.583"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.592" starttime="20180527 00:11:03.589"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.594" starttime="20180527 00:11:03.582"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 12">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.601" level="INFO">${Formula_Multiply} = 60</msg>
+<status status="PASS" endtime="20180527 00:11:03.602" starttime="20180527 00:11:03.597"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.606" starttime="20180527 00:11:03.604"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.607" starttime="20180527 00:11:03.596"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.608" starttime="20180527 00:11:03.459"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.610" starttime="20180527 00:11:03.457"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n******************\n</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.614" starttime="20180527 00:11:03.611"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.615" starttime="20180527 00:11:03.456"></status>
+</kw>
+<kw type="foritem" name="${Number_base} = 6">
+<kw name="KW_LoopMultiply">
+<doc>Keyword Set Variable</doc>
+<arguments>
+<arg>${Number_base}</arg>
+</arguments>
+<kw type="for" name="${Count_Multiply} IN RANGE [ 1 | 13 ]">
+<kw type="foritem" name="${Count_Multiply} = 1">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.624" level="INFO">${Formula_Multiply} = 6</msg>
+<status status="PASS" endtime="20180527 00:11:03.624" starttime="20180527 00:11:03.621"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.630" starttime="20180527 00:11:03.625"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.631" starttime="20180527 00:11:03.620"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 2">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.638" level="INFO">${Formula_Multiply} = 12</msg>
+<status status="PASS" endtime="20180527 00:11:03.638" starttime="20180527 00:11:03.633"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.642" starttime="20180527 00:11:03.638"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.643" starttime="20180527 00:11:03.632"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 3">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.650" level="INFO">${Formula_Multiply} = 18</msg>
+<status status="PASS" endtime="20180527 00:11:03.651" starttime="20180527 00:11:03.646"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.655" starttime="20180527 00:11:03.653"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.655" starttime="20180527 00:11:03.645"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 4">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.662" level="INFO">${Formula_Multiply} = 24</msg>
+<status status="PASS" endtime="20180527 00:11:03.662" starttime="20180527 00:11:03.656"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.667" starttime="20180527 00:11:03.663"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.668" starttime="20180527 00:11:03.656"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 5">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.672" level="INFO">${Formula_Multiply} = 30</msg>
+<status status="PASS" endtime="20180527 00:11:03.672" starttime="20180527 00:11:03.669"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.675" starttime="20180527 00:11:03.673"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.677" starttime="20180527 00:11:03.669"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 6">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.683" level="INFO">${Formula_Multiply} = 36</msg>
+<status status="PASS" endtime="20180527 00:11:03.683" starttime="20180527 00:11:03.679"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.687" starttime="20180527 00:11:03.684"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.687" starttime="20180527 00:11:03.678"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 7">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.691" level="INFO">${Formula_Multiply} = 42</msg>
+<status status="PASS" endtime="20180527 00:11:03.692" starttime="20180527 00:11:03.688"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.695" starttime="20180527 00:11:03.692"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.696" starttime="20180527 00:11:03.688"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 8">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.704" level="INFO">${Formula_Multiply} = 48</msg>
+<status status="PASS" endtime="20180527 00:11:03.704" starttime="20180527 00:11:03.699"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.708" starttime="20180527 00:11:03.705"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.709" starttime="20180527 00:11:03.698"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 9">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.715" level="INFO">${Formula_Multiply} = 54</msg>
+<status status="PASS" endtime="20180527 00:11:03.715" starttime="20180527 00:11:03.711"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.718" starttime="20180527 00:11:03.716"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.718" starttime="20180527 00:11:03.709"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 10">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.722" level="INFO">${Formula_Multiply} = 60</msg>
+<status status="PASS" endtime="20180527 00:11:03.722" starttime="20180527 00:11:03.719"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.726" starttime="20180527 00:11:03.723"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.727" starttime="20180527 00:11:03.719"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 11">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.735" level="INFO">${Formula_Multiply} = 66</msg>
+<status status="PASS" endtime="20180527 00:11:03.736" starttime="20180527 00:11:03.730"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.740" starttime="20180527 00:11:03.737"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.740" starttime="20180527 00:11:03.729"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 12">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.747" level="INFO">${Formula_Multiply} = 72</msg>
+<status status="PASS" endtime="20180527 00:11:03.748" starttime="20180527 00:11:03.741"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.753" starttime="20180527 00:11:03.749"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.753" starttime="20180527 00:11:03.741"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.753" starttime="20180527 00:11:03.619"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.754" starttime="20180527 00:11:03.616"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n******************\n</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.758" starttime="20180527 00:11:03.755"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.759" starttime="20180527 00:11:03.615"></status>
+</kw>
+<kw type="foritem" name="${Number_base} = 7">
+<kw name="KW_LoopMultiply">
+<doc>Keyword Set Variable</doc>
+<arguments>
+<arg>${Number_base}</arg>
+</arguments>
+<kw type="for" name="${Count_Multiply} IN RANGE [ 1 | 13 ]">
+<kw type="foritem" name="${Count_Multiply} = 1">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.768" level="INFO">${Formula_Multiply} = 7</msg>
+<status status="PASS" endtime="20180527 00:11:03.769" starttime="20180527 00:11:03.765"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.774" starttime="20180527 00:11:03.770"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.774" starttime="20180527 00:11:03.764"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 2">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.781" level="INFO">${Formula_Multiply} = 14</msg>
+<status status="PASS" endtime="20180527 00:11:03.782" starttime="20180527 00:11:03.775"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.786" starttime="20180527 00:11:03.783"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.787" starttime="20180527 00:11:03.775"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 3">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.791" level="INFO">${Formula_Multiply} = 21</msg>
+<status status="PASS" endtime="20180527 00:11:03.791" starttime="20180527 00:11:03.788"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.796" starttime="20180527 00:11:03.792"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.798" starttime="20180527 00:11:03.787"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 4">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.804" level="INFO">${Formula_Multiply} = 28</msg>
+<status status="PASS" endtime="20180527 00:11:03.805" starttime="20180527 00:11:03.799"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.809" starttime="20180527 00:11:03.805"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.809" starttime="20180527 00:11:03.798"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 5">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.816" level="INFO">${Formula_Multiply} = 35</msg>
+<status status="PASS" endtime="20180527 00:11:03.816" starttime="20180527 00:11:03.812"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.820" starttime="20180527 00:11:03.817"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.820" starttime="20180527 00:11:03.810"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 6">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.824" level="INFO">${Formula_Multiply} = 42</msg>
+<status status="PASS" endtime="20180527 00:11:03.825" starttime="20180527 00:11:03.821"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.829" starttime="20180527 00:11:03.825"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.830" starttime="20180527 00:11:03.821"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 7">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.836" level="INFO">${Formula_Multiply} = 49</msg>
+<status status="PASS" endtime="20180527 00:11:03.837" starttime="20180527 00:11:03.832"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.839" starttime="20180527 00:11:03.837"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.840" starttime="20180527 00:11:03.831"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 8">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.846" level="INFO">${Formula_Multiply} = 56</msg>
+<status status="PASS" endtime="20180527 00:11:03.847" starttime="20180527 00:11:03.841"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.851" starttime="20180527 00:11:03.848"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.852" starttime="20180527 00:11:03.840"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 9">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.855" level="INFO">${Formula_Multiply} = 63</msg>
+<status status="PASS" endtime="20180527 00:11:03.855" starttime="20180527 00:11:03.853"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.861" starttime="20180527 00:11:03.856"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.862" starttime="20180527 00:11:03.852"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 10">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.868" level="INFO">${Formula_Multiply} = 70</msg>
+<status status="PASS" endtime="20180527 00:11:03.869" starttime="20180527 00:11:03.864"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.871" starttime="20180527 00:11:03.869"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.871" starttime="20180527 00:11:03.863"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 11">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.876" level="INFO">${Formula_Multiply} = 77</msg>
+<status status="PASS" endtime="20180527 00:11:03.877" starttime="20180527 00:11:03.872"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.882" starttime="20180527 00:11:03.878"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.883" starttime="20180527 00:11:03.872"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 12">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.889" level="INFO">${Formula_Multiply} = 84</msg>
+<status status="PASS" endtime="20180527 00:11:03.890" starttime="20180527 00:11:03.885"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.895" starttime="20180527 00:11:03.891"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.896" starttime="20180527 00:11:03.884"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.897" starttime="20180527 00:11:03.762"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.898" starttime="20180527 00:11:03.761"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n******************\n</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.902" starttime="20180527 00:11:03.899"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.902" starttime="20180527 00:11:03.759"></status>
+</kw>
+<kw type="foritem" name="${Number_base} = 8">
+<kw name="KW_LoopMultiply">
+<doc>Keyword Set Variable</doc>
+<arguments>
+<arg>${Number_base}</arg>
+</arguments>
+<kw type="for" name="${Count_Multiply} IN RANGE [ 1 | 13 ]">
+<kw type="foritem" name="${Count_Multiply} = 1">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.911" level="INFO">${Formula_Multiply} = 8</msg>
+<status status="PASS" endtime="20180527 00:11:03.912" starttime="20180527 00:11:03.906"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.917" starttime="20180527 00:11:03.914"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.917" starttime="20180527 00:11:03.906"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 2">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.922" level="INFO">${Formula_Multiply} = 16</msg>
+<status status="PASS" endtime="20180527 00:11:03.922" starttime="20180527 00:11:03.918"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.927" starttime="20180527 00:11:03.923"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.928" starttime="20180527 00:11:03.917"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 3">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.934" level="INFO">${Formula_Multiply} = 24</msg>
+<status status="PASS" endtime="20180527 00:11:03.935" starttime="20180527 00:11:03.930"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.937" starttime="20180527 00:11:03.936"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.938" starttime="20180527 00:11:03.929"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 4">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.942" level="INFO">${Formula_Multiply} = 32</msg>
+<status status="PASS" endtime="20180527 00:11:03.943" starttime="20180527 00:11:03.939"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.948" starttime="20180527 00:11:03.944"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.948" starttime="20180527 00:11:03.938"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 5">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.954" level="INFO">${Formula_Multiply} = 40</msg>
+<status status="PASS" endtime="20180527 00:11:03.955" starttime="20180527 00:11:03.950"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.958" starttime="20180527 00:11:03.955"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.958" starttime="20180527 00:11:03.949"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 6">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.966" level="INFO">${Formula_Multiply} = 48</msg>
+<status status="PASS" endtime="20180527 00:11:03.967" starttime="20180527 00:11:03.961"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.970" starttime="20180527 00:11:03.968"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.970" starttime="20180527 00:11:03.959"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 7">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.974" level="INFO">${Formula_Multiply} = 56</msg>
+<status status="PASS" endtime="20180527 00:11:03.975" starttime="20180527 00:11:03.971"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.978" starttime="20180527 00:11:03.975"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.979" starttime="20180527 00:11:03.971"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 8">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.984" level="INFO">${Formula_Multiply} = 64</msg>
+<status status="PASS" endtime="20180527 00:11:03.985" starttime="20180527 00:11:03.981"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:03.989" starttime="20180527 00:11:03.986"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:03.989" starttime="20180527 00:11:03.980"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 9">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:03.995" level="INFO">${Formula_Multiply} = 72</msg>
+<status status="PASS" endtime="20180527 00:11:03.996" starttime="20180527 00:11:03.990"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.000" starttime="20180527 00:11:03.997"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.001" starttime="20180527 00:11:03.990"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 10">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.005" level="INFO">${Formula_Multiply} = 80</msg>
+<status status="PASS" endtime="20180527 00:11:04.006" starttime="20180527 00:11:04.003"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.009" starttime="20180527 00:11:04.006"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.011" starttime="20180527 00:11:04.002"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 11">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.019" level="INFO">${Formula_Multiply} = 88</msg>
+<status status="PASS" endtime="20180527 00:11:04.020" starttime="20180527 00:11:04.014"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.026" starttime="20180527 00:11:04.021"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.027" starttime="20180527 00:11:04.012"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 12">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.033" level="INFO">${Formula_Multiply} = 96</msg>
+<status status="PASS" endtime="20180527 00:11:04.034" starttime="20180527 00:11:04.029"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.039" starttime="20180527 00:11:04.035"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.039" starttime="20180527 00:11:04.028"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.040" starttime="20180527 00:11:03.905"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.041" starttime="20180527 00:11:03.904"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n******************\n</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.047" starttime="20180527 00:11:04.042"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.048" starttime="20180527 00:11:03.903"></status>
+</kw>
+<kw type="foritem" name="${Number_base} = 9">
+<kw name="KW_LoopMultiply">
+<doc>Keyword Set Variable</doc>
+<arguments>
+<arg>${Number_base}</arg>
+</arguments>
+<kw type="for" name="${Count_Multiply} IN RANGE [ 1 | 13 ]">
+<kw type="foritem" name="${Count_Multiply} = 1">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.061" level="INFO">${Formula_Multiply} = 9</msg>
+<status status="PASS" endtime="20180527 00:11:04.061" starttime="20180527 00:11:04.054"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.068" starttime="20180527 00:11:04.062"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.068" starttime="20180527 00:11:04.053"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 2">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.080" level="INFO">${Formula_Multiply} = 18</msg>
+<status status="PASS" endtime="20180527 00:11:04.081" starttime="20180527 00:11:04.070"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.088" starttime="20180527 00:11:04.082"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.088" starttime="20180527 00:11:04.069"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 3">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.094" level="INFO">${Formula_Multiply} = 27</msg>
+<status status="PASS" endtime="20180527 00:11:04.096" starttime="20180527 00:11:04.089"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.102" starttime="20180527 00:11:04.098"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.102" starttime="20180527 00:11:04.089"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 4">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.114" level="INFO">${Formula_Multiply} = 36</msg>
+<status status="PASS" endtime="20180527 00:11:04.115" starttime="20180527 00:11:04.105"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.126" starttime="20180527 00:11:04.117"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.127" starttime="20180527 00:11:04.105"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 5">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.134" level="INFO">${Formula_Multiply} = 45</msg>
+<status status="PASS" endtime="20180527 00:11:04.134" starttime="20180527 00:11:04.128"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.139" starttime="20180527 00:11:04.135"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.140" starttime="20180527 00:11:04.127"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 6">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.150" level="INFO">${Formula_Multiply} = 54</msg>
+<status status="PASS" endtime="20180527 00:11:04.150" starttime="20180527 00:11:04.141"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.157" starttime="20180527 00:11:04.152"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.158" starttime="20180527 00:11:04.141"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 7">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.163" level="INFO">${Formula_Multiply} = 63</msg>
+<status status="PASS" endtime="20180527 00:11:04.163" starttime="20180527 00:11:04.159"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.168" starttime="20180527 00:11:04.164"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.169" starttime="20180527 00:11:04.158"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 8">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.175" level="INFO">${Formula_Multiply} = 72</msg>
+<status status="PASS" endtime="20180527 00:11:04.176" starttime="20180527 00:11:04.172"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.182" starttime="20180527 00:11:04.178"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.184" starttime="20180527 00:11:04.169"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 9">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.188" level="INFO">${Formula_Multiply} = 81</msg>
+<status status="PASS" endtime="20180527 00:11:04.188" starttime="20180527 00:11:04.185"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.190" starttime="20180527 00:11:04.188"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.191" starttime="20180527 00:11:04.185"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 10">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.199" level="INFO">${Formula_Multiply} = 90</msg>
+<status status="PASS" endtime="20180527 00:11:04.199" starttime="20180527 00:11:04.192"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.204" starttime="20180527 00:11:04.200"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.205" starttime="20180527 00:11:04.191"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 11">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.210" level="INFO">${Formula_Multiply} = 99</msg>
+<status status="PASS" endtime="20180527 00:11:04.211" starttime="20180527 00:11:04.206"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.218" starttime="20180527 00:11:04.214"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.219" starttime="20180527 00:11:04.206"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 12">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.234" level="INFO">${Formula_Multiply} = 108</msg>
+<status status="PASS" endtime="20180527 00:11:04.235" starttime="20180527 00:11:04.223"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.239" starttime="20180527 00:11:04.237"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.240" starttime="20180527 00:11:04.222"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.241" starttime="20180527 00:11:04.052"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.242" starttime="20180527 00:11:04.049"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n******************\n</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.246" starttime="20180527 00:11:04.243"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.247" starttime="20180527 00:11:04.049"></status>
+</kw>
+<kw type="foritem" name="${Number_base} = 10">
+<kw name="KW_LoopMultiply">
+<doc>Keyword Set Variable</doc>
+<arguments>
+<arg>${Number_base}</arg>
+</arguments>
+<kw type="for" name="${Count_Multiply} IN RANGE [ 1 | 13 ]">
+<kw type="foritem" name="${Count_Multiply} = 1">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.260" level="INFO">${Formula_Multiply} = 10</msg>
+<status status="PASS" endtime="20180527 00:11:04.262" starttime="20180527 00:11:04.254"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.266" starttime="20180527 00:11:04.263"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.266" starttime="20180527 00:11:04.254"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 2">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.272" level="INFO">${Formula_Multiply} = 20</msg>
+<status status="PASS" endtime="20180527 00:11:04.272" starttime="20180527 00:11:04.269"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.275" starttime="20180527 00:11:04.272"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.275" starttime="20180527 00:11:04.269"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 3">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.284" level="INFO">${Formula_Multiply} = 30</msg>
+<status status="PASS" endtime="20180527 00:11:04.285" starttime="20180527 00:11:04.278"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.289" starttime="20180527 00:11:04.286"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.290" starttime="20180527 00:11:04.276"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 4">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.295" level="INFO">${Formula_Multiply} = 40</msg>
+<status status="PASS" endtime="20180527 00:11:04.296" starttime="20180527 00:11:04.291"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.301" starttime="20180527 00:11:04.298"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.302" starttime="20180527 00:11:04.290"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 5">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.307" level="INFO">${Formula_Multiply} = 50</msg>
+<status status="PASS" endtime="20180527 00:11:04.307" starttime="20180527 00:11:04.305"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.312" starttime="20180527 00:11:04.308"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.313" starttime="20180527 00:11:04.304"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 6">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.320" level="INFO">${Formula_Multiply} = 60</msg>
+<status status="PASS" endtime="20180527 00:11:04.321" starttime="20180527 00:11:04.315"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.323" starttime="20180527 00:11:04.321"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.323" starttime="20180527 00:11:04.314"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 7">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.330" level="INFO">${Formula_Multiply} = 70</msg>
+<status status="PASS" endtime="20180527 00:11:04.331" starttime="20180527 00:11:04.325"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.335" starttime="20180527 00:11:04.331"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.335" starttime="20180527 00:11:04.324"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 8">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.343" level="INFO">${Formula_Multiply} = 80</msg>
+<status status="PASS" endtime="20180527 00:11:04.343" starttime="20180527 00:11:04.337"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.349" starttime="20180527 00:11:04.345"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.350" starttime="20180527 00:11:04.336"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 9">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.356" level="INFO">${Formula_Multiply} = 90</msg>
+<status status="PASS" endtime="20180527 00:11:04.356" starttime="20180527 00:11:04.353"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.359" starttime="20180527 00:11:04.356"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.359" starttime="20180527 00:11:04.350"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 10">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.367" level="INFO">${Formula_Multiply} = 100</msg>
+<status status="PASS" endtime="20180527 00:11:04.367" starttime="20180527 00:11:04.361"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.372" starttime="20180527 00:11:04.368"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.372" starttime="20180527 00:11:04.361"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 11">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.376" level="INFO">${Formula_Multiply} = 110</msg>
+<status status="PASS" endtime="20180527 00:11:04.376" starttime="20180527 00:11:04.373"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.381" starttime="20180527 00:11:04.377"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.382" starttime="20180527 00:11:04.372"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 12">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.389" level="INFO">${Formula_Multiply} = 120</msg>
+<status status="PASS" endtime="20180527 00:11:04.389" starttime="20180527 00:11:04.384"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.392" starttime="20180527 00:11:04.390"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.392" starttime="20180527 00:11:04.383"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.393" starttime="20180527 00:11:04.253"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.395" starttime="20180527 00:11:04.250"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n******************\n</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.400" starttime="20180527 00:11:04.397"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.400" starttime="20180527 00:11:04.248"></status>
+</kw>
+<kw type="foritem" name="${Number_base} = 11">
+<kw name="KW_LoopMultiply">
+<doc>Keyword Set Variable</doc>
+<arguments>
+<arg>${Number_base}</arg>
+</arguments>
+<kw type="for" name="${Count_Multiply} IN RANGE [ 1 | 13 ]">
+<kw type="foritem" name="${Count_Multiply} = 1">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.408" level="INFO">${Formula_Multiply} = 11</msg>
+<status status="PASS" endtime="20180527 00:11:04.409" starttime="20180527 00:11:04.405"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.415" starttime="20180527 00:11:04.410"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.416" starttime="20180527 00:11:04.405"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 2">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.422" level="INFO">${Formula_Multiply} = 22</msg>
+<status status="PASS" endtime="20180527 00:11:04.422" starttime="20180527 00:11:04.419"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.424" starttime="20180527 00:11:04.423"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.425" starttime="20180527 00:11:04.416"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 3">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.434" level="INFO">${Formula_Multiply} = 33</msg>
+<status status="PASS" endtime="20180527 00:11:04.434" starttime="20180527 00:11:04.426"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.440" starttime="20180527 00:11:04.438"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.440" starttime="20180527 00:11:04.425"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 4">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.445" level="INFO">${Formula_Multiply} = 44</msg>
+<status status="PASS" endtime="20180527 00:11:04.446" starttime="20180527 00:11:04.441"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.451" starttime="20180527 00:11:04.448"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.452" starttime="20180527 00:11:04.440"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 5">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.458" level="INFO">${Formula_Multiply} = 55</msg>
+<status status="PASS" endtime="20180527 00:11:04.458" starttime="20180527 00:11:04.454"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.464" starttime="20180527 00:11:04.459"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.465" starttime="20180527 00:11:04.453"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 6">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.471" level="INFO">${Formula_Multiply} = 66</msg>
+<status status="PASS" endtime="20180527 00:11:04.471" starttime="20180527 00:11:04.466"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.473" starttime="20180527 00:11:04.472"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.474" starttime="20180527 00:11:04.465"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 7">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.480" level="INFO">${Formula_Multiply} = 77</msg>
+<status status="PASS" endtime="20180527 00:11:04.480" starttime="20180527 00:11:04.475"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.485" starttime="20180527 00:11:04.482"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.486" starttime="20180527 00:11:04.474"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 8">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.492" level="INFO">${Formula_Multiply} = 88</msg>
+<status status="PASS" endtime="20180527 00:11:04.492" starttime="20180527 00:11:04.489"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.498" starttime="20180527 00:11:04.493"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.499" starttime="20180527 00:11:04.488"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 9">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.506" level="INFO">${Formula_Multiply} = 99</msg>
+<status status="PASS" endtime="20180527 00:11:04.506" starttime="20180527 00:11:04.501"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.508" starttime="20180527 00:11:04.506"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.509" starttime="20180527 00:11:04.500"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 10">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.516" level="INFO">${Formula_Multiply} = 110</msg>
+<status status="PASS" endtime="20180527 00:11:04.517" starttime="20180527 00:11:04.510"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.521" starttime="20180527 00:11:04.518"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.522" starttime="20180527 00:11:04.509"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 11">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.526" level="INFO">${Formula_Multiply} = 121</msg>
+<status status="PASS" endtime="20180527 00:11:04.526" starttime="20180527 00:11:04.523"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.532" starttime="20180527 00:11:04.527"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.533" starttime="20180527 00:11:04.522"></status>
+</kw>
+<kw type="foritem" name="${Count_Multiply} = 12">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply}</arg>
+</arguments>
+<assign>
+<var>${Formula_Multiply}</var>
+</assign>
+<msg timestamp="20180527 00:11:04.540" level="INFO">${Formula_Multiply} = 132</msg>
+<status status="PASS" endtime="20180527 00:11:04.540" starttime="20180527 00:11:04.535"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${Var_Number_base} * ${Count_Multiply} = ${Formula_Multiply}</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.543" starttime="20180527 00:11:04.540"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.544" starttime="20180527 00:11:04.534"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.544" starttime="20180527 00:11:04.404"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.546" starttime="20180527 00:11:04.403"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n******************\n</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.553" starttime="20180527 00:11:04.548"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.554" starttime="20180527 00:11:04.402"></status>
+</kw>
+<status status="PASS" endtime="20180527 00:11:04.554" starttime="20180527 00:11:03.027"></status>
+</kw>
+<kw type="teardown" name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n======================\n</arg>
+</arguments>
+<status status="PASS" endtime="20180527 00:11:04.556" starttime="20180527 00:11:04.555"></status>
+</kw>
+<doc>Create Variable Array</doc>
+<tags>
+<tag>Create_Array</tag>
+<tag>StringAndVariable</tag>
+</tags>
+<status status="PASS" endtime="20180527 00:11:04.557" critical="yes" starttime="20180527 00:11:03.023"></status>
+</test>
+<doc>If condition Example</doc>
+<status status="PASS" endtime="20180527 00:11:04.559" starttime="20180527 00:11:02.797"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Create_Array</stat>
+<stat fail="0" pass="1">StringAndVariable</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Loop" pass="1">Loop</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
