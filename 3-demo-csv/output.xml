@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180528 21:13:13.430" generator="Robot 2.9.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/gique/Documents/Document/SLIDE/robot framework/robot-demo/3-demo-csv/csv.robot" id="s1" name="Csv">
+<test id="s1-t1" name="Test Read CSV file">
+<kw name="Read Csv File" library="CSVLib">
+<arguments>
+<arg>testCSV.csv</arg>
+</arguments>
+<assign>
+<var>${all users}</var>
+</assign>
+<msg timestamp="20180528 21:13:13.481" level="INFO">${all users} = [['somsak', 'saksith', '30'], ['wutthichai', 'sombatcharoen', '40'], ['sarot', '', '30'], ['macintosh', '', '35'], ['', 'mcmanaman', '25'], ['hyundai', 'jaidee', ''], ['', '', '16'], ['', '', '', '']]</msg>
+<status status="PASS" endtime="20180528 21:13:13.481" starttime="20180528 21:13:13.480"></status>
+</kw>
+<kw type="for" name="${user} IN [ @{all users} ]">
+<kw type="foritem" name="${user} = ['somsak', 'saksith', '30']">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{user}[0] - @{user}[1] - @{user}[2]</arg>
+</arguments>
+<msg timestamp="20180528 21:13:13.482" level="INFO">somsak - saksith - 30</msg>
+<status status="PASS" endtime="20180528 21:13:13.483" starttime="20180528 21:13:13.482"></status>
+</kw>
+<status status="PASS" endtime="20180528 21:13:13.483" starttime="20180528 21:13:13.482"></status>
+</kw>
+<kw type="foritem" name="${user} = ['wutthichai', 'sombatcharoen', '40']">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{user}[0] - @{user}[1] - @{user}[2]</arg>
+</arguments>
+<msg timestamp="20180528 21:13:13.484" level="INFO">wutthichai - sombatcharoen - 40</msg>
+<status status="PASS" endtime="20180528 21:13:13.484" starttime="20180528 21:13:13.483"></status>
+</kw>
+<status status="PASS" endtime="20180528 21:13:13.484" starttime="20180528 21:13:13.483"></status>
+</kw>
+<kw type="foritem" name="${user} = ['sarot', '', '30']">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{user}[0] - @{user}[1] - @{user}[2]</arg>
+</arguments>
+<msg timestamp="20180528 21:13:13.485" level="INFO">sarot -  - 30</msg>
+<status status="PASS" endtime="20180528 21:13:13.485" starttime="20180528 21:13:13.484"></status>
+</kw>
+<status status="PASS" endtime="20180528 21:13:13.485" starttime="20180528 21:13:13.484"></status>
+</kw>
+<kw type="foritem" name="${user} = ['macintosh', '', '35']">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{user}[0] - @{user}[1] - @{user}[2]</arg>
+</arguments>
+<msg timestamp="20180528 21:13:13.486" level="INFO">macintosh -  - 35</msg>
+<status status="PASS" endtime="20180528 21:13:13.486" starttime="20180528 21:13:13.485"></status>
+</kw>
+<status status="PASS" endtime="20180528 21:13:13.486" starttime="20180528 21:13:13.485"></status>
+</kw>
+<kw type="foritem" name="${user} = ['', 'mcmanaman', '25']">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{user}[0] - @{user}[1] - @{user}[2]</arg>
+</arguments>
+<msg timestamp="20180528 21:13:13.487" level="INFO"> - mcmanaman - 25</msg>
+<status status="PASS" endtime="20180528 21:13:13.487" starttime="20180528 21:13:13.486"></status>
+</kw>
+<status status="PASS" endtime="20180528 21:13:13.487" starttime="20180528 21:13:13.486"></status>
+</kw>
+<kw type="foritem" name="${user} = ['hyundai', 'jaidee', '']">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{user}[0] - @{user}[1] - @{user}[2]</arg>
+</arguments>
+<msg timestamp="20180528 21:13:13.488" level="INFO">hyundai - jaidee - </msg>
+<status status="PASS" endtime="20180528 21:13:13.488" starttime="20180528 21:13:13.487"></status>
+</kw>
+<status status="PASS" endtime="20180528 21:13:13.488" starttime="20180528 21:13:13.487"></status>
+</kw>
+<kw type="foritem" name="${user} = ['', '', '16']">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{user}[0] - @{user}[1] - @{user}[2]</arg>
+</arguments>
+<msg timestamp="20180528 21:13:13.490" level="INFO"> -  - 16</msg>
+<status status="PASS" endtime="20180528 21:13:13.491" starttime="20180528 21:13:13.489"></status>
+</kw>
+<status status="PASS" endtime="20180528 21:13:13.491" starttime="20180528 21:13:13.488"></status>
+</kw>
+<kw type="foritem" name="${user} = ['', '', '', '']">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{user}[0] - @{user}[1] - @{user}[2]</arg>
+</arguments>
+<msg timestamp="20180528 21:13:13.492" level="INFO"> -  - </msg>
+<status status="PASS" endtime="20180528 21:13:13.492" starttime="20180528 21:13:13.491"></status>
+</kw>
+<status status="PASS" endtime="20180528 21:13:13.492" starttime="20180528 21:13:13.491"></status>
+</kw>
+<status status="PASS" endtime="20180528 21:13:13.493" starttime="20180528 21:13:13.481"></status>
+</kw>
+<status status="PASS" endtime="20180528 21:13:13.493" critical="yes" starttime="20180528 21:13:13.479"></status>
+</test>
+<status status="PASS" endtime="20180528 21:13:13.494" starttime="20180528 21:13:13.435"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Csv" pass="1">Csv</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

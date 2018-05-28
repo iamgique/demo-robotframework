@@ -12,4 +12,4 @@ Valid Login
     Input Password    mode
     Submit Credentials
     Welcome Page Should Be Open
-    [Teardown]    Close Browser
+    #[Teardown]    Close Browser
