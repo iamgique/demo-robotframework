@@ -1,21 +1,297 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180528 21:03:44.260" generator="Robot 2.9.2 (Python 2.7.10 on darwin)">
+<robot generated="20180603 19:25:21.843" generator="Robot 2.9.2 (Python 2.7.10 on darwin)">
 <suite source="/Users/gique/Documents/Document/SLIDE/robot framework/robot-demo/2-demo-loop/loop.robot" id="s1" name="Loop">
 <kw type="setup" name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Start Code Loop</arg>
 </arguments>
-<status status="PASS" endtime="20180528 21:03:44.545" starttime="20180528 21:03:44.543"></status>
+<status status="PASS" endtime="20180603 19:25:22.157" starttime="20180603 19:25:22.156"></status>
 </kw>
-<test id="s1-t1" timeout="30 seconds" name="Create Array">
+<test id="s1-t1" timeout="30 seconds" name="Loop in range">
+<kw type="for" name="${index} IN RANGE [ 0 | 20 ]">
+<kw type="foritem" name="${index} = 0">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.163" level="INFO">0</msg>
+<status status="PASS" endtime="20180603 19:25:22.164" starttime="20180603 19:25:22.161"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.165" starttime="20180603 19:25:22.160"></status>
+</kw>
+<kw type="foritem" name="${index} = 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.168" level="INFO">1</msg>
+<status status="PASS" endtime="20180603 19:25:22.168" starttime="20180603 19:25:22.167"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.169" starttime="20180603 19:25:22.166"></status>
+</kw>
+<kw type="foritem" name="${index} = 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.170" level="INFO">2</msg>
+<status status="PASS" endtime="20180603 19:25:22.171" starttime="20180603 19:25:22.169"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.171" starttime="20180603 19:25:22.169"></status>
+</kw>
+<kw type="foritem" name="${index} = 3">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.173" level="INFO">3</msg>
+<status status="PASS" endtime="20180603 19:25:22.174" starttime="20180603 19:25:22.172"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.175" starttime="20180603 19:25:22.172"></status>
+</kw>
+<kw type="foritem" name="${index} = 4">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.178" level="INFO">4</msg>
+<status status="PASS" endtime="20180603 19:25:22.178" starttime="20180603 19:25:22.177"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.178" starttime="20180603 19:25:22.176"></status>
+</kw>
+<kw type="foritem" name="${index} = 5">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.181" level="INFO">5</msg>
+<status status="PASS" endtime="20180603 19:25:22.182" starttime="20180603 19:25:22.179"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.183" starttime="20180603 19:25:22.179"></status>
+</kw>
+<kw type="foritem" name="${index} = 6">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.186" level="INFO">6</msg>
+<status status="PASS" endtime="20180603 19:25:22.187" starttime="20180603 19:25:22.184"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.188" starttime="20180603 19:25:22.183"></status>
+</kw>
+<kw type="foritem" name="${index} = 7">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.190" level="INFO">7</msg>
+<status status="PASS" endtime="20180603 19:25:22.190" starttime="20180603 19:25:22.189"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.191" starttime="20180603 19:25:22.188"></status>
+</kw>
+<kw type="foritem" name="${index} = 8">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.193" level="INFO">8</msg>
+<status status="PASS" endtime="20180603 19:25:22.194" starttime="20180603 19:25:22.192"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.194" starttime="20180603 19:25:22.191"></status>
+</kw>
+<kw type="foritem" name="${index} = 9">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.196" level="INFO">9</msg>
+<status status="PASS" endtime="20180603 19:25:22.197" starttime="20180603 19:25:22.195"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.197" starttime="20180603 19:25:22.195"></status>
+</kw>
+<kw type="foritem" name="${index} = 10">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.199" level="INFO">10</msg>
+<status status="PASS" endtime="20180603 19:25:22.199" starttime="20180603 19:25:22.198"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.199" starttime="20180603 19:25:22.197"></status>
+</kw>
+<kw type="foritem" name="${index} = 11">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.201" level="INFO">11</msg>
+<status status="PASS" endtime="20180603 19:25:22.202" starttime="20180603 19:25:22.200"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.202" starttime="20180603 19:25:22.200"></status>
+</kw>
+<kw type="foritem" name="${index} = 12">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.204" level="INFO">12</msg>
+<status status="PASS" endtime="20180603 19:25:22.204" starttime="20180603 19:25:22.203"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.205" starttime="20180603 19:25:22.202"></status>
+</kw>
+<kw type="foritem" name="${index} = 13">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.207" level="INFO">13</msg>
+<status status="PASS" endtime="20180603 19:25:22.207" starttime="20180603 19:25:22.205"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.208" starttime="20180603 19:25:22.205"></status>
+</kw>
+<kw type="foritem" name="${index} = 14">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.210" level="INFO">14</msg>
+<status status="PASS" endtime="20180603 19:25:22.210" starttime="20180603 19:25:22.209"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.211" starttime="20180603 19:25:22.208"></status>
+</kw>
+<kw type="foritem" name="${index} = 15">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.212" level="INFO">15</msg>
+<status status="PASS" endtime="20180603 19:25:22.213" starttime="20180603 19:25:22.211"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.213" starttime="20180603 19:25:22.211"></status>
+</kw>
+<kw type="foritem" name="${index} = 16">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.215" level="INFO">16</msg>
+<status status="PASS" endtime="20180603 19:25:22.215" starttime="20180603 19:25:22.214"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.216" starttime="20180603 19:25:22.213"></status>
+</kw>
+<kw type="foritem" name="${index} = 17">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.218" level="INFO">17</msg>
+<status status="PASS" endtime="20180603 19:25:22.219" starttime="20180603 19:25:22.217"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.219" starttime="20180603 19:25:22.216"></status>
+</kw>
+<kw type="foritem" name="${index} = 18">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.221" level="INFO">18</msg>
+<status status="PASS" endtime="20180603 19:25:22.221" starttime="20180603 19:25:22.220"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.221" starttime="20180603 19:25:22.219"></status>
+</kw>
+<kw type="foritem" name="${index} = 19">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${index}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.223" level="INFO">19</msg>
+<status status="PASS" endtime="20180603 19:25:22.224" starttime="20180603 19:25:22.222"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.224" starttime="20180603 19:25:22.222"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.224" starttime="20180603 19:25:22.159"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.225" critical="yes" starttime="20180603 19:25:22.158"></status>
+</test>
+<test id="s1-t2" timeout="30 seconds" name="Loop in list">
+<kw type="for" name="${list} IN [ @{lists} ]">
+<kw type="foritem" name="${list} = test list 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${list}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.230" level="INFO">test list 1</msg>
+<status status="PASS" endtime="20180603 19:25:22.231" starttime="20180603 19:25:22.228"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.232" starttime="20180603 19:25:22.228"></status>
+</kw>
+<kw type="foritem" name="${list} = test list 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${list}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.236" level="INFO">test list 2</msg>
+<status status="PASS" endtime="20180603 19:25:22.237" starttime="20180603 19:25:22.234"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.237" starttime="20180603 19:25:22.233"></status>
+</kw>
+<kw type="foritem" name="${list} = test list 3">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${list}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.239" level="INFO">test list 3</msg>
+<status status="PASS" endtime="20180603 19:25:22.239" starttime="20180603 19:25:22.238"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.240" starttime="20180603 19:25:22.237"></status>
+</kw>
+<kw type="foritem" name="${list} = test list 4">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${list}</arg>
+</arguments>
+<msg timestamp="20180603 19:25:22.243" level="INFO">test list 4</msg>
+<status status="PASS" endtime="20180603 19:25:22.244" starttime="20180603 19:25:22.241"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.244" starttime="20180603 19:25:22.240"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.245" starttime="20180603 19:25:22.227"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:25:22.246" critical="yes" starttime="20180603 19:25:22.227"></status>
+</test>
+<test id="s1-t3" timeout="30 seconds" name="Create Array">
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.551" level="INFO">@{Ary_Input} = [ ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.552" starttime="20180528 21:03:44.548"></status>
+<msg timestamp="20180603 19:25:22.252" level="INFO">@{Ary_Input} = [ ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.253" starttime="20180603 19:25:22.251"></status>
 </kw>
 <kw type="for" name="${Index} IN RANGE [ 0 | 20 ]">
 <kw type="foritem" name="${Index} = 0">
@@ -28,10 +304,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.555" level="INFO">@{Ary_Input} = [ 0 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.556" starttime="20180528 21:03:44.553"></status>
+<msg timestamp="20180603 19:25:22.255" level="INFO">@{Ary_Input} = [ 0 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.256" starttime="20180603 19:25:22.254"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.556" starttime="20180528 21:03:44.553"></status>
+<status status="PASS" endtime="20180603 19:25:22.256" starttime="20180603 19:25:22.253"></status>
 </kw>
 <kw type="foritem" name="${Index} = 1">
 <kw name="Create List" library="BuiltIn">
@@ -43,10 +319,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.560" level="INFO">@{Ary_Input} = [ 0 | 1 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.561" starttime="20180528 21:03:44.557"></status>
+<msg timestamp="20180603 19:25:22.261" level="INFO">@{Ary_Input} = [ 0 | 1 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.261" starttime="20180603 19:25:22.258"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.561" starttime="20180528 21:03:44.556"></status>
+<status status="PASS" endtime="20180603 19:25:22.262" starttime="20180603 19:25:22.257"></status>
 </kw>
 <kw type="foritem" name="${Index} = 2">
 <kw name="Create List" library="BuiltIn">
@@ -58,10 +334,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.570" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.571" starttime="20180528 21:03:44.564"></status>
+<msg timestamp="20180603 19:25:22.267" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.267" starttime="20180603 19:25:22.263"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.572" starttime="20180528 21:03:44.562"></status>
+<status status="PASS" endtime="20180603 19:25:22.267" starttime="20180603 19:25:22.263"></status>
 </kw>
 <kw type="foritem" name="${Index} = 3">
 <kw name="Create List" library="BuiltIn">
@@ -73,10 +349,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.577" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.577" starttime="20180528 21:03:44.574"></status>
+<msg timestamp="20180603 19:25:22.270" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.270" starttime="20180603 19:25:22.268"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.578" starttime="20180528 21:03:44.573"></status>
+<status status="PASS" endtime="20180603 19:25:22.270" starttime="20180603 19:25:22.268"></status>
 </kw>
 <kw type="foritem" name="${Index} = 4">
 <kw name="Create List" library="BuiltIn">
@@ -88,10 +364,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.584" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.585" starttime="20180528 21:03:44.579"></status>
+<msg timestamp="20180603 19:25:22.273" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.273" starttime="20180603 19:25:22.271"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.586" starttime="20180528 21:03:44.579"></status>
+<status status="PASS" endtime="20180603 19:25:22.273" starttime="20180603 19:25:22.271"></status>
 </kw>
 <kw type="foritem" name="${Index} = 5">
 <kw name="Create List" library="BuiltIn">
@@ -103,10 +379,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.590" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.590" starttime="20180528 21:03:44.587"></status>
+<msg timestamp="20180603 19:25:22.277" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.277" starttime="20180603 19:25:22.275"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.591" starttime="20180528 21:03:44.587"></status>
+<status status="PASS" endtime="20180603 19:25:22.277" starttime="20180603 19:25:22.274"></status>
 </kw>
 <kw type="foritem" name="${Index} = 6">
 <kw name="Create List" library="BuiltIn">
@@ -118,10 +394,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.595" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.595" starttime="20180528 21:03:44.593"></status>
+<msg timestamp="20180603 19:25:22.280" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.281" starttime="20180603 19:25:22.278"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.595" starttime="20180528 21:03:44.592"></status>
+<status status="PASS" endtime="20180603 19:25:22.281" starttime="20180603 19:25:22.278"></status>
 </kw>
 <kw type="foritem" name="${Index} = 7">
 <kw name="Create List" library="BuiltIn">
@@ -133,10 +409,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.600" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.600" starttime="20180528 21:03:44.597"></status>
+<msg timestamp="20180603 19:25:22.284" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.284" starttime="20180603 19:25:22.282"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.601" starttime="20180528 21:03:44.596"></status>
+<status status="PASS" endtime="20180603 19:25:22.285" starttime="20180603 19:25:22.282"></status>
 </kw>
 <kw type="foritem" name="${Index} = 8">
 <kw name="Create List" library="BuiltIn">
@@ -148,10 +424,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.604" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.605" starttime="20180528 21:03:44.602"></status>
+<msg timestamp="20180603 19:25:22.287" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.287" starttime="20180603 19:25:22.285"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.605" starttime="20180528 21:03:44.602"></status>
+<status status="PASS" endtime="20180603 19:25:22.287" starttime="20180603 19:25:22.285"></status>
 </kw>
 <kw type="foritem" name="${Index} = 9">
 <kw name="Create List" library="BuiltIn">
@@ -163,10 +439,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.607" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.608" starttime="20180528 21:03:44.606"></status>
+<msg timestamp="20180603 19:25:22.291" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.291" starttime="20180603 19:25:22.288"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.608" starttime="20180528 21:03:44.605"></status>
+<status status="PASS" endtime="20180603 19:25:22.291" starttime="20180603 19:25:22.288"></status>
 </kw>
 <kw type="foritem" name="${Index} = 10">
 <kw name="Create List" library="BuiltIn">
@@ -178,10 +454,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.610" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.611" starttime="20180528 21:03:44.609"></status>
+<msg timestamp="20180603 19:25:22.294" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.294" starttime="20180603 19:25:22.292"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.611" starttime="20180528 21:03:44.608"></status>
+<status status="PASS" endtime="20180603 19:25:22.294" starttime="20180603 19:25:22.292"></status>
 </kw>
 <kw type="foritem" name="${Index} = 11">
 <kw name="Create List" library="BuiltIn">
@@ -193,10 +469,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.614" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.615" starttime="20180528 21:03:44.612"></status>
+<msg timestamp="20180603 19:25:22.297" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.297" starttime="20180603 19:25:22.295"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.616" starttime="20180528 21:03:44.611"></status>
+<status status="PASS" endtime="20180603 19:25:22.297" starttime="20180603 19:25:22.294"></status>
 </kw>
 <kw type="foritem" name="${Index} = 12">
 <kw name="Create List" library="BuiltIn">
@@ -208,10 +484,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.619" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.620" starttime="20180528 21:03:44.617"></status>
+<msg timestamp="20180603 19:25:22.300" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.301" starttime="20180603 19:25:22.298"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.620" starttime="20180528 21:03:44.617"></status>
+<status status="PASS" endtime="20180603 19:25:22.301" starttime="20180603 19:25:22.298"></status>
 </kw>
 <kw type="foritem" name="${Index} = 13">
 <kw name="Create List" library="BuiltIn">
@@ -223,10 +499,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.623" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.623" starttime="20180528 21:03:44.621"></status>
+<msg timestamp="20180603 19:25:22.303" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.304" starttime="20180603 19:25:22.302"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.623" starttime="20180528 21:03:44.620"></status>
+<status status="PASS" endtime="20180603 19:25:22.304" starttime="20180603 19:25:22.301"></status>
 </kw>
 <kw type="foritem" name="${Index} = 14">
 <kw name="Create List" library="BuiltIn">
@@ -238,10 +514,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.626" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.626" starttime="20180528 21:03:44.624"></status>
+<msg timestamp="20180603 19:25:22.306" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.307" starttime="20180603 19:25:22.305"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.626" starttime="20180528 21:03:44.624"></status>
+<status status="PASS" endtime="20180603 19:25:22.307" starttime="20180603 19:25:22.304"></status>
 </kw>
 <kw type="foritem" name="${Index} = 15">
 <kw name="Create List" library="BuiltIn">
@@ -253,10 +529,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.629" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.629" starttime="20180528 21:03:44.627"></status>
+<msg timestamp="20180603 19:25:22.310" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.310" starttime="20180603 19:25:22.308"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.629" starttime="20180528 21:03:44.627"></status>
+<status status="PASS" endtime="20180603 19:25:22.311" starttime="20180603 19:25:22.307"></status>
 </kw>
 <kw type="foritem" name="${Index} = 16">
 <kw name="Create List" library="BuiltIn">
@@ -268,10 +544,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.634" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.634" starttime="20180528 21:03:44.631"></status>
+<msg timestamp="20180603 19:25:22.315" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.316" starttime="20180603 19:25:22.312"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.635" starttime="20180528 21:03:44.630"></status>
+<status status="PASS" endtime="20180603 19:25:22.316" starttime="20180603 19:25:22.311"></status>
 </kw>
 <kw type="foritem" name="${Index} = 17">
 <kw name="Create List" library="BuiltIn">
@@ -283,10 +559,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.637" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.638" starttime="20180528 21:03:44.636"></status>
+<msg timestamp="20180603 19:25:22.319" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.319" starttime="20180603 19:25:22.317"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.638" starttime="20180528 21:03:44.635"></status>
+<status status="PASS" endtime="20180603 19:25:22.319" starttime="20180603 19:25:22.317"></status>
 </kw>
 <kw type="foritem" name="${Index} = 18">
 <kw name="Create List" library="BuiltIn">
@@ -298,10 +574,10 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.641" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.641" starttime="20180528 21:03:44.639"></status>
+<msg timestamp="20180603 19:25:22.322" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.322" starttime="20180603 19:25:22.320"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.641" starttime="20180528 21:03:44.638"></status>
+<status status="PASS" endtime="20180603 19:25:22.323" starttime="20180603 19:25:22.320"></status>
 </kw>
 <kw type="foritem" name="${Index} = 19">
 <kw name="Create List" library="BuiltIn">
@@ -313,26 +589,26 @@
 <assign>
 <var>@{Ary_Input}</var>
 </assign>
-<msg timestamp="20180528 21:03:44.644" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 ]</msg>
-<status status="PASS" endtime="20180528 21:03:44.644" starttime="20180528 21:03:44.642"></status>
+<msg timestamp="20180603 19:25:22.325" level="INFO">@{Ary_Input} = [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 ]</msg>
+<status status="PASS" endtime="20180603 19:25:22.325" starttime="20180603 19:25:22.323"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.644" starttime="20180528 21:03:44.642"></status>
+<status status="PASS" endtime="20180603 19:25:22.326" starttime="20180603 19:25:22.323"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.645" starttime="20180528 21:03:44.552"></status>
+<status status="PASS" endtime="20180603 19:25:22.326" starttime="20180603 19:25:22.253"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${Ary_Input}</arg>
 </arguments>
-<status status="PASS" endtime="20180528 21:03:44.649" starttime="20180528 21:03:44.646"></status>
+<status status="PASS" endtime="20180603 19:25:22.331" starttime="20180603 19:25:22.327"></status>
 </kw>
 <kw name="Log List" library="Collections">
 <doc>Logs the length and contents of the ``list`` using given ``level``.</doc>
 <arguments>
 <arg>${Ary_Input}</arg>
 </arguments>
-<msg timestamp="20180528 21:03:44.652" level="INFO">List length is 20 and it contains following items:
+<msg timestamp="20180603 19:25:22.335" level="INFO">List length is 20 and it contains following items:
 0: 0
 1: 1
 2: 2
@@ -353,22 +629,22 @@
 17: 17
 18: 18
 19: 19</msg>
-<status status="PASS" endtime="20180528 21:03:44.653" starttime="20180528 21:03:44.650"></status>
+<status status="PASS" endtime="20180603 19:25:22.336" starttime="20180603 19:25:22.332"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:03:44.654" critical="yes" starttime="20180528 21:03:44.546"></status>
+<status status="PASS" endtime="20180603 19:25:22.338" critical="yes" starttime="20180603 19:25:22.247"></status>
 </test>
 <doc>If condition Example</doc>
-<status status="PASS" endtime="20180528 21:03:44.655" starttime="20180528 21:03:44.266"></status>
+<status status="PASS" endtime="20180603 19:25:22.340" starttime="20180603 19:25:21.849"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="1">Critical Tests</stat>
-<stat fail="0" pass="1">All Tests</stat>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Loop" pass="1">Loop</stat>
+<stat fail="0" id="s1" name="Loop" pass="3">Loop</stat>
 </suite>
 </statistics>
 <errors>

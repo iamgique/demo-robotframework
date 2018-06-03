@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180603 23:33:09.559" generator="Robot 2.9.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/gique/Documents/Document/SLIDE/robot framework/robot-demo/6-demo-icon/testcase/test_customer_service.robot" id="s1" name="Test Customer Service">
+<test id="s1-t1" timeout="5 minutes" name="Check search complain sale problem customer report">
+<kw name="Open Browser To Welcome Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL_WEB}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180603 23:33:09.862" level="INFO">Opening browser 'Chrome' to base url 'http://std.iconrem.com/v43'</msg>
+<status status="PASS" endtime="20180603 23:33:12.550" starttime="20180603 23:33:09.861"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180603 23:33:12.786" starttime="20180603 23:33:12.552"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20180603 23:33:12.789" starttime="20180603 23:33:12.787"></status>
+</kw>
+<kw name="Welcome Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>CRM &amp; REM - STD</arg>
+</arguments>
+<msg timestamp="20180603 23:33:12.800" level="INFO">Page title is 'CRM &amp; REM - STD'.</msg>
+<status status="PASS" endtime="20180603 23:33:12.801" starttime="20180603 23:33:12.791"></status>
+</kw>
+<status status="PASS" endtime="20180603 23:33:12.803" starttime="20180603 23:33:12.790"></status>
+</kw>
+<status status="PASS" endtime="20180603 23:33:12.804" starttime="20180603 23:33:09.859"></status>
+</kw>
+<kw name="Login to iconrem" library="resource">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@name="txtUsername"]</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20180603 23:33:12.809" level="INFO">Typing text 'kittipoom' into text field '//*[@name="txtUsername"]'</msg>
+<status status="PASS" endtime="20180603 23:33:13.247" starttime="20180603 23:33:12.807"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=txtPassword</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20180603 23:33:13.251" level="INFO">Typing text 'password2' into text field 'name=txtPassword'</msg>
+<status status="PASS" endtime="20180603 23:33:13.573" starttime="20180603 23:33:13.249"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="btSignIn"]</arg>
+</arguments>
+<msg timestamp="20180603 23:33:13.577" level="INFO">Clicking button '//*[@id="btSignIn"]'.</msg>
+<status status="PASS" endtime="20180603 23:33:13.849" starttime="20180603 23:33:13.575"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Database=STD_DEV</arg>
+</arguments>
+<status status="PASS" endtime="20180603 23:33:15.432" starttime="20180603 23:33:13.851"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Call center</arg>
+</arguments>
+<status status="PASS" endtime="20180603 23:33:15.457" starttime="20180603 23:33:15.433"></status>
+</kw>
+<status status="PASS" endtime="20180603 23:33:15.458" starttime="20180603 23:33:12.805"></status>
+</kw>
+<kw name="Go to Dashboard Customer Service" library="resource">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//label[@class='icon-button' and contains(.,"Customer Service")]</arg>
+</arguments>
+<msg timestamp="20180603 23:33:15.463" level="INFO">Clicking element '//label[@class='icon-button' and contains(.,"Customer Service")]'.</msg>
+<status status="PASS" endtime="20180603 23:33:16.109" starttime="20180603 23:33:15.460"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>งานของฉัน</arg>
+</arguments>
+<status status="PASS" endtime="20180603 23:33:16.167" starttime="20180603 23:33:16.110"></status>
+</kw>
+<status status="PASS" endtime="20180603 23:33:16.167" starttime="20180603 23:33:15.459"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="TopMenu"]/li[4]/a</arg>
+</arguments>
+<msg timestamp="20180603 23:33:16.169" level="INFO">Clicking element '//*[@id="TopMenu"]/li[4]/a'.</msg>
+<status status="PASS" endtime="20180603 23:33:16.749" starttime="20180603 23:33:16.168"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>รายการแจ้งปัญหาทั้งหมด</arg>
+</arguments>
+<status status="PASS" endtime="20180603 23:33:16.806" starttime="20180603 23:33:16.750"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>เลขที่ใบแจ้ง</arg>
+</arguments>
+<status status="PASS" endtime="20180603 23:33:16.881" starttime="20180603 23:33:16.807"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180603 23:33:17.889" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180603 23:33:17.890" starttime="20180603 23:33:16.882"></status>
+</kw>
+<kw name="Search in problem customer report" library="resource">
+<arguments>
+<arg>CC-0000125-18050003</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="txtSearchText"]</arg>
+<arg>${input}</arg>
+</arguments>
+<msg timestamp="20180603 23:33:17.894" level="INFO">Typing text 'CC-0000125-18050003' into text field '//*[@id="txtSearchText"]'</msg>
+<status status="PASS" endtime="20180603 23:33:18.124" starttime="20180603 23:33:17.892"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="btSearch"]</arg>
+</arguments>
+<msg timestamp="20180603 23:33:18.127" level="INFO">Clicking element '//*[@id="btSearch"]'.</msg>
+<status status="PASS" endtime="20180603 23:33:18.228" starttime="20180603 23:33:18.125"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>เลขที่ใบแจ้ง</arg>
+</arguments>
+<status status="PASS" endtime="20180603 23:33:18.257" starttime="20180603 23:33:18.230"></status>
+</kw>
+<status status="PASS" endtime="20180603 23:33:18.258" starttime="20180603 23:33:17.891"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180603 23:33:19.266" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180603 23:33:19.267" starttime="20180603 23:33:18.260"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>CC-0000125-18050003</arg>
+</arguments>
+<status status="PASS" endtime="20180603 23:33:19.291" starttime="20180603 23:33:19.268"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Complain Sale</arg>
+</arguments>
+<status status="PASS" endtime="20180603 23:33:19.318" starttime="20180603 23:33:19.292"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Inprocess</arg>
+</arguments>
+<status status="PASS" endtime="20180603 23:33:19.341" starttime="20180603 23:33:19.318"></status>
+</kw>
+<doc>Check search complain sale problem customer report</doc>
+<tags>
+<tag>ckeck problem report</tag>
+<tag>SmokeTest</tag>
+</tags>
+<status status="PASS" endtime="20180603 23:33:19.341" critical="yes" starttime="20180603 23:33:09.856"></status>
+</test>
+<doc>iconframework demo</doc>
+<status status="PASS" endtime="20180603 23:33:19.343" starttime="20180603 23:33:09.566"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">ckeck problem report</stat>
+<stat fail="0" pass="1">SmokeTest</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test Customer Service" pass="1">Test Customer Service</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180603 23:33:09.833" level="ERROR">Error in file '/Users/gique/Documents/Document/SLIDE/robot framework/robot-demo/6-demo-icon/keywords/resource.robot': Importing test library 'ExcelLibrary' failed: ImportError: No module named ExcelLibrary
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /Library/Frameworks/Python.framework/Versions/2.7/bin
+  /usr/local/lib/wxPython-unicode-2.8.12.1/lib/python2.7/site-packages
+  /usr/local/lib/wxPython-unicode-2.8.12.1/lib/python2.7/site-packages/wx-2.8-mac-unicode
+  /Library/Frameworks/Python.framework/Versions/2.7/lib/python27.zip
+  /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7
+  /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-darwin
+  /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac
+  /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac/lib-scriptpackages
+  /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk
+  /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-old
+  /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-dynload
+  /Users/gique/Library/Python/2.7/lib/python/site-packages
+  /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages
+  /usr/local/lib/wxPython-unicode-2.8.12.1/lib/python2.7</msg>
+</errors>
+</robot>

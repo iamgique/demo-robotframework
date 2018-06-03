@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180528 21:13:13.430" generator="Robot 2.9.2 (Python 2.7.10 on darwin)">
+<robot generated="20180603 19:11:21.266" generator="Robot 2.9.2 (Python 2.7.10 on darwin)">
 <suite source="/Users/gique/Documents/Document/SLIDE/robot framework/robot-demo/3-demo-csv/csv.robot" id="s1" name="Csv">
 <test id="s1-t1" name="Test Read CSV file">
 <kw name="Read Csv File" library="CSVLib">
@@ -9,8 +9,8 @@
 <assign>
 <var>${all users}</var>
 </assign>
-<msg timestamp="20180528 21:13:13.481" level="INFO">${all users} = [['somsak', 'saksith', '30'], ['wutthichai', 'sombatcharoen', '40'], ['sarot', '', '30'], ['macintosh', '', '35'], ['', 'mcmanaman', '25'], ['hyundai', 'jaidee', ''], ['', '', '16'], ['', '', '', '']]</msg>
-<status status="PASS" endtime="20180528 21:13:13.481" starttime="20180528 21:13:13.480"></status>
+<msg timestamp="20180603 19:11:21.328" level="INFO">${all users} = [['somsak', 'saksith', '30'], ['wutthichai', 'sombatcharoen', '40'], ['sarot', '', '30'], ['macintosh', '', '35'], ['', 'mcmanaman', '25'], ['hyundai', 'jaidee', ''], ['', '', '16'], ['', '', '', '']]</msg>
+<status status="PASS" endtime="20180603 19:11:21.328" starttime="20180603 19:11:21.327"></status>
 </kw>
 <kw type="for" name="${user} IN [ @{all users} ]">
 <kw type="foritem" name="${user} = ['somsak', 'saksith', '30']">
@@ -19,10 +19,10 @@
 <arguments>
 <arg>@{user}[0] - @{user}[1] - @{user}[2]</arg>
 </arguments>
-<msg timestamp="20180528 21:13:13.482" level="INFO">somsak - saksith - 30</msg>
-<status status="PASS" endtime="20180528 21:13:13.483" starttime="20180528 21:13:13.482"></status>
+<msg timestamp="20180603 19:11:21.330" level="INFO">somsak - saksith - 30</msg>
+<status status="PASS" endtime="20180603 19:11:21.330" starttime="20180603 19:11:21.329"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:13:13.483" starttime="20180528 21:13:13.482"></status>
+<status status="PASS" endtime="20180603 19:11:21.330" starttime="20180603 19:11:21.329"></status>
 </kw>
 <kw type="foritem" name="${user} = ['wutthichai', 'sombatcharoen', '40']">
 <kw name="Log" library="BuiltIn">
@@ -30,10 +30,10 @@
 <arguments>
 <arg>@{user}[0] - @{user}[1] - @{user}[2]</arg>
 </arguments>
-<msg timestamp="20180528 21:13:13.484" level="INFO">wutthichai - sombatcharoen - 40</msg>
-<status status="PASS" endtime="20180528 21:13:13.484" starttime="20180528 21:13:13.483"></status>
+<msg timestamp="20180603 19:11:21.331" level="INFO">wutthichai - sombatcharoen - 40</msg>
+<status status="PASS" endtime="20180603 19:11:21.331" starttime="20180603 19:11:21.331"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:13:13.484" starttime="20180528 21:13:13.483"></status>
+<status status="PASS" endtime="20180603 19:11:21.331" starttime="20180603 19:11:21.330"></status>
 </kw>
 <kw type="foritem" name="${user} = ['sarot', '', '30']">
 <kw name="Log" library="BuiltIn">
@@ -41,10 +41,10 @@
 <arguments>
 <arg>@{user}[0] - @{user}[1] - @{user}[2]</arg>
 </arguments>
-<msg timestamp="20180528 21:13:13.485" level="INFO">sarot -  - 30</msg>
-<status status="PASS" endtime="20180528 21:13:13.485" starttime="20180528 21:13:13.484"></status>
+<msg timestamp="20180603 19:11:21.332" level="INFO">sarot -  - 30</msg>
+<status status="PASS" endtime="20180603 19:11:21.333" starttime="20180603 19:11:21.332"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:13:13.485" starttime="20180528 21:13:13.484"></status>
+<status status="PASS" endtime="20180603 19:11:21.333" starttime="20180603 19:11:21.332"></status>
 </kw>
 <kw type="foritem" name="${user} = ['macintosh', '', '35']">
 <kw name="Log" library="BuiltIn">
@@ -52,10 +52,10 @@
 <arguments>
 <arg>@{user}[0] - @{user}[1] - @{user}[2]</arg>
 </arguments>
-<msg timestamp="20180528 21:13:13.486" level="INFO">macintosh -  - 35</msg>
-<status status="PASS" endtime="20180528 21:13:13.486" starttime="20180528 21:13:13.485"></status>
+<msg timestamp="20180603 19:11:21.335" level="INFO">macintosh -  - 35</msg>
+<status status="PASS" endtime="20180603 19:11:21.335" starttime="20180603 19:11:21.334"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:13:13.486" starttime="20180528 21:13:13.485"></status>
+<status status="PASS" endtime="20180603 19:11:21.335" starttime="20180603 19:11:21.333"></status>
 </kw>
 <kw type="foritem" name="${user} = ['', 'mcmanaman', '25']">
 <kw name="Log" library="BuiltIn">
@@ -63,10 +63,10 @@
 <arguments>
 <arg>@{user}[0] - @{user}[1] - @{user}[2]</arg>
 </arguments>
-<msg timestamp="20180528 21:13:13.487" level="INFO"> - mcmanaman - 25</msg>
-<status status="PASS" endtime="20180528 21:13:13.487" starttime="20180528 21:13:13.486"></status>
+<msg timestamp="20180603 19:11:21.336" level="INFO"> - mcmanaman - 25</msg>
+<status status="PASS" endtime="20180603 19:11:21.336" starttime="20180603 19:11:21.335"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:13:13.487" starttime="20180528 21:13:13.486"></status>
+<status status="PASS" endtime="20180603 19:11:21.336" starttime="20180603 19:11:21.335"></status>
 </kw>
 <kw type="foritem" name="${user} = ['hyundai', 'jaidee', '']">
 <kw name="Log" library="BuiltIn">
@@ -74,10 +74,10 @@
 <arguments>
 <arg>@{user}[0] - @{user}[1] - @{user}[2]</arg>
 </arguments>
-<msg timestamp="20180528 21:13:13.488" level="INFO">hyundai - jaidee - </msg>
-<status status="PASS" endtime="20180528 21:13:13.488" starttime="20180528 21:13:13.487"></status>
+<msg timestamp="20180603 19:11:21.338" level="INFO">hyundai - jaidee - </msg>
+<status status="PASS" endtime="20180603 19:11:21.338" starttime="20180603 19:11:21.337"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:13:13.488" starttime="20180528 21:13:13.487"></status>
+<status status="PASS" endtime="20180603 19:11:21.338" starttime="20180603 19:11:21.336"></status>
 </kw>
 <kw type="foritem" name="${user} = ['', '', '16']">
 <kw name="Log" library="BuiltIn">
@@ -85,10 +85,10 @@
 <arguments>
 <arg>@{user}[0] - @{user}[1] - @{user}[2]</arg>
 </arguments>
-<msg timestamp="20180528 21:13:13.490" level="INFO"> -  - 16</msg>
-<status status="PASS" endtime="20180528 21:13:13.491" starttime="20180528 21:13:13.489"></status>
+<msg timestamp="20180603 19:11:21.340" level="INFO"> -  - 16</msg>
+<status status="PASS" endtime="20180603 19:11:21.340" starttime="20180603 19:11:21.339"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:13:13.491" starttime="20180528 21:13:13.488"></status>
+<status status="PASS" endtime="20180603 19:11:21.340" starttime="20180603 19:11:21.339"></status>
 </kw>
 <kw type="foritem" name="${user} = ['', '', '', '']">
 <kw name="Log" library="BuiltIn">
@@ -96,26 +96,1043 @@
 <arguments>
 <arg>@{user}[0] - @{user}[1] - @{user}[2]</arg>
 </arguments>
-<msg timestamp="20180528 21:13:13.492" level="INFO"> -  - </msg>
-<status status="PASS" endtime="20180528 21:13:13.492" starttime="20180528 21:13:13.491"></status>
+<msg timestamp="20180603 19:11:21.341" level="INFO"> -  - </msg>
+<status status="PASS" endtime="20180603 19:11:21.341" starttime="20180603 19:11:21.340"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:13:13.492" starttime="20180528 21:13:13.491"></status>
+<status status="PASS" endtime="20180603 19:11:21.341" starttime="20180603 19:11:21.340"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:13:13.493" starttime="20180528 21:13:13.481"></status>
+<status status="PASS" endtime="20180603 19:11:21.341" starttime="20180603 19:11:21.328"></status>
 </kw>
-<status status="PASS" endtime="20180528 21:13:13.493" critical="yes" starttime="20180528 21:13:13.479"></status>
+<status status="PASS" endtime="20180603 19:11:21.342" critical="yes" starttime="20180603 19:11:21.326"></status>
 </test>
-<status status="PASS" endtime="20180528 21:13:13.494" starttime="20180528 21:13:13.435"></status>
+<test id="s1-t2" name="Test Read CSV with Assert">
+<kw name="Read Csv File" library="CSVLib">
+<arguments>
+<arg>testCSV.csv</arg>
+</arguments>
+<assign>
+<var>${all in csv}</var>
+</assign>
+<msg timestamp="20180603 19:11:21.348" level="INFO">${all in csv} = [['somsak', 'saksith', '30'], ['wutthichai', 'sombatcharoen', '40'], ['sarot', '', '30'], ['macintosh', '', '35'], ['', 'mcmanaman', '25'], ['hyundai', 'jaidee', ''], ['', '', '16'], ['', '', '', '']]</msg>
+<status status="PASS" endtime="20180603 19:11:21.348" starttime="20180603 19:11:21.347"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${all in csv}</arg>
+</arguments>
+<assign>
+<var>${count}</var>
+</assign>
+<msg timestamp="20180603 19:11:21.350" level="INFO">Length is 8</msg>
+<msg timestamp="20180603 19:11:21.350" level="INFO">${count} = 8</msg>
+<status status="PASS" endtime="20180603 19:11:21.350" starttime="20180603 19:11:21.349"></status>
+</kw>
+<kw type="for" name="${index} IN RANGE [ 0 | ${count} ]">
+<kw type="foritem" name="${index} = 0">
+<kw name="Loop in item">
+<arguments>
+<arg>${index}</arg>
+<arg>${all in csv}</arg>
+</arguments>
+<kw type="for" name="${j} IN RANGE [ 0 | 3 ]">
+<kw type="foritem" name="${j} = 0">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.352" level="INFO">0</msg>
+<status status="PASS" endtime="20180603 19:11:21.352" starttime="20180603 19:11:21.352"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.353" level="INFO">somsak</msg>
+<status status="PASS" endtime="20180603 19:11:21.354" starttime="20180603 19:11:21.353"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.355" level="INFO">somsak</msg>
+<status status="PASS" endtime="20180603 19:11:21.355" starttime="20180603 19:11:21.354"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.357" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180603 19:11:21.357" starttime="20180603 19:11:21.355"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.357" starttime="20180603 19:11:21.352"></status>
+</kw>
+<kw type="foritem" name="${j} = 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.359" level="INFO">1</msg>
+<status status="PASS" endtime="20180603 19:11:21.359" starttime="20180603 19:11:21.358"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.360" level="INFO">saksith</msg>
+<status status="PASS" endtime="20180603 19:11:21.361" starttime="20180603 19:11:21.359"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.362" level="INFO">saksith</msg>
+<status status="PASS" endtime="20180603 19:11:21.363" starttime="20180603 19:11:21.361"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.365" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180603 19:11:21.365" starttime="20180603 19:11:21.363"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.365" starttime="20180603 19:11:21.358"></status>
+</kw>
+<kw type="foritem" name="${j} = 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.366" level="INFO">2</msg>
+<status status="PASS" endtime="20180603 19:11:21.366" starttime="20180603 19:11:21.366"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.367" level="INFO">30</msg>
+<status status="PASS" endtime="20180603 19:11:21.367" starttime="20180603 19:11:21.366"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.368" level="INFO">30</msg>
+<status status="PASS" endtime="20180603 19:11:21.368" starttime="20180603 19:11:21.367"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.370" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180603 19:11:21.370" starttime="20180603 19:11:21.368"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.370" starttime="20180603 19:11:21.366"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.370" starttime="20180603 19:11:21.352"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.371" starttime="20180603 19:11:21.351"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.371" starttime="20180603 19:11:21.351"></status>
+</kw>
+<kw type="foritem" name="${index} = 1">
+<kw name="Loop in item">
+<arguments>
+<arg>${index}</arg>
+<arg>${all in csv}</arg>
+</arguments>
+<kw type="for" name="${j} IN RANGE [ 0 | 3 ]">
+<kw type="foritem" name="${j} = 0">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.373" level="INFO">0</msg>
+<status status="PASS" endtime="20180603 19:11:21.373" starttime="20180603 19:11:21.372"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.374" level="INFO">wutthichai</msg>
+<status status="PASS" endtime="20180603 19:11:21.374" starttime="20180603 19:11:21.373"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.375" level="INFO">wutthichai</msg>
+<status status="PASS" endtime="20180603 19:11:21.375" starttime="20180603 19:11:21.374"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.376" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180603 19:11:21.377" starttime="20180603 19:11:21.376"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.377" starttime="20180603 19:11:21.372"></status>
+</kw>
+<kw type="foritem" name="${j} = 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.377" level="INFO">1</msg>
+<status status="PASS" endtime="20180603 19:11:21.377" starttime="20180603 19:11:21.377"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.379" level="INFO">sombatcharoen</msg>
+<status status="PASS" endtime="20180603 19:11:21.379" starttime="20180603 19:11:21.378"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.380" level="INFO">sombatcharoen</msg>
+<status status="PASS" endtime="20180603 19:11:21.380" starttime="20180603 19:11:21.379"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.381" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180603 19:11:21.381" starttime="20180603 19:11:21.380"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.381" starttime="20180603 19:11:21.377"></status>
+</kw>
+<kw type="foritem" name="${j} = 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.382" level="INFO">2</msg>
+<status status="PASS" endtime="20180603 19:11:21.382" starttime="20180603 19:11:21.381"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.382" level="INFO">40</msg>
+<status status="PASS" endtime="20180603 19:11:21.383" starttime="20180603 19:11:21.382"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.383" level="INFO">40</msg>
+<status status="PASS" endtime="20180603 19:11:21.383" starttime="20180603 19:11:21.383"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.385" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180603 19:11:21.385" starttime="20180603 19:11:21.384"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.385" starttime="20180603 19:11:21.381"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.385" starttime="20180603 19:11:21.372"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.385" starttime="20180603 19:11:21.371"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.385" starttime="20180603 19:11:21.371"></status>
+</kw>
+<kw type="foritem" name="${index} = 2">
+<kw name="Loop in item">
+<arguments>
+<arg>${index}</arg>
+<arg>${all in csv}</arg>
+</arguments>
+<kw type="for" name="${j} IN RANGE [ 0 | 3 ]">
+<kw type="foritem" name="${j} = 0">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.387" level="INFO">0</msg>
+<status status="PASS" endtime="20180603 19:11:21.387" starttime="20180603 19:11:21.387"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.388" level="INFO">sarot</msg>
+<status status="PASS" endtime="20180603 19:11:21.388" starttime="20180603 19:11:21.388"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.389" level="INFO">sarot</msg>
+<status status="PASS" endtime="20180603 19:11:21.389" starttime="20180603 19:11:21.388"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.390" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180603 19:11:21.391" starttime="20180603 19:11:21.390"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.391" starttime="20180603 19:11:21.387"></status>
+</kw>
+<kw type="foritem" name="${j} = 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.391" level="INFO">1</msg>
+<status status="PASS" endtime="20180603 19:11:21.391" starttime="20180603 19:11:21.391"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.392" level="INFO"></msg>
+<status status="PASS" endtime="20180603 19:11:21.392" starttime="20180603 19:11:21.391"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.393" level="INFO"></msg>
+<status status="PASS" endtime="20180603 19:11:21.393" starttime="20180603 19:11:21.392"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<status status="PASS" endtime="20180603 19:11:21.395" starttime="20180603 19:11:21.393"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.395" starttime="20180603 19:11:21.391"></status>
+</kw>
+<kw type="foritem" name="${j} = 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.396" level="INFO">2</msg>
+<status status="PASS" endtime="20180603 19:11:21.396" starttime="20180603 19:11:21.395"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.396" level="INFO">30</msg>
+<status status="PASS" endtime="20180603 19:11:21.397" starttime="20180603 19:11:21.396"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.397" level="INFO">30</msg>
+<status status="PASS" endtime="20180603 19:11:21.397" starttime="20180603 19:11:21.397"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.398" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180603 19:11:21.398" starttime="20180603 19:11:21.397"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.398" starttime="20180603 19:11:21.395"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.398" starttime="20180603 19:11:21.386"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.399" starttime="20180603 19:11:21.385"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.399" starttime="20180603 19:11:21.385"></status>
+</kw>
+<kw type="foritem" name="${index} = 3">
+<kw name="Loop in item">
+<arguments>
+<arg>${index}</arg>
+<arg>${all in csv}</arg>
+</arguments>
+<kw type="for" name="${j} IN RANGE [ 0 | 3 ]">
+<kw type="foritem" name="${j} = 0">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.400" level="INFO">0</msg>
+<status status="PASS" endtime="20180603 19:11:21.400" starttime="20180603 19:11:21.400"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.401" level="INFO">macintosh</msg>
+<status status="PASS" endtime="20180603 19:11:21.401" starttime="20180603 19:11:21.400"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.402" level="INFO">macintosh</msg>
+<status status="PASS" endtime="20180603 19:11:21.402" starttime="20180603 19:11:21.401"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.405" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180603 19:11:21.405" starttime="20180603 19:11:21.403"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.405" starttime="20180603 19:11:21.400"></status>
+</kw>
+<kw type="foritem" name="${j} = 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.405" level="INFO">1</msg>
+<status status="PASS" endtime="20180603 19:11:21.406" starttime="20180603 19:11:21.405"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.407" level="INFO"></msg>
+<status status="PASS" endtime="20180603 19:11:21.407" starttime="20180603 19:11:21.406"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.407" level="INFO"></msg>
+<status status="PASS" endtime="20180603 19:11:21.408" starttime="20180603 19:11:21.407"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<status status="PASS" endtime="20180603 19:11:21.409" starttime="20180603 19:11:21.408"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.409" starttime="20180603 19:11:21.405"></status>
+</kw>
+<kw type="foritem" name="${j} = 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.409" level="INFO">2</msg>
+<status status="PASS" endtime="20180603 19:11:21.409" starttime="20180603 19:11:21.409"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.411" level="INFO">35</msg>
+<status status="PASS" endtime="20180603 19:11:21.411" starttime="20180603 19:11:21.410"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.412" level="INFO">35</msg>
+<status status="PASS" endtime="20180603 19:11:21.412" starttime="20180603 19:11:21.411"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.413" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180603 19:11:21.413" starttime="20180603 19:11:21.412"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.413" starttime="20180603 19:11:21.409"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.413" starttime="20180603 19:11:21.399"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.413" starttime="20180603 19:11:21.399"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.413" starttime="20180603 19:11:21.399"></status>
+</kw>
+<kw type="foritem" name="${index} = 4">
+<kw name="Loop in item">
+<arguments>
+<arg>${index}</arg>
+<arg>${all in csv}</arg>
+</arguments>
+<kw type="for" name="${j} IN RANGE [ 0 | 3 ]">
+<kw type="foritem" name="${j} = 0">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.415" level="INFO">0</msg>
+<status status="PASS" endtime="20180603 19:11:21.415" starttime="20180603 19:11:21.414"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.415" level="INFO"></msg>
+<status status="PASS" endtime="20180603 19:11:21.416" starttime="20180603 19:11:21.415"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.416" level="INFO"></msg>
+<status status="PASS" endtime="20180603 19:11:21.416" starttime="20180603 19:11:21.416"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<status status="PASS" endtime="20180603 19:11:21.417" starttime="20180603 19:11:21.417"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.417" starttime="20180603 19:11:21.414"></status>
+</kw>
+<kw type="foritem" name="${j} = 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.419" level="INFO">1</msg>
+<status status="PASS" endtime="20180603 19:11:21.419" starttime="20180603 19:11:21.418"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.420" level="INFO">mcmanaman</msg>
+<status status="PASS" endtime="20180603 19:11:21.420" starttime="20180603 19:11:21.419"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.421" level="INFO">mcmanaman</msg>
+<status status="PASS" endtime="20180603 19:11:21.421" starttime="20180603 19:11:21.420"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.422" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180603 19:11:21.422" starttime="20180603 19:11:21.421"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.422" starttime="20180603 19:11:21.418"></status>
+</kw>
+<kw type="foritem" name="${j} = 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.422" level="INFO">2</msg>
+<status status="PASS" endtime="20180603 19:11:21.423" starttime="20180603 19:11:21.422"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.423" level="INFO">25</msg>
+<status status="PASS" endtime="20180603 19:11:21.424" starttime="20180603 19:11:21.423"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.424" level="INFO">25</msg>
+<status status="PASS" endtime="20180603 19:11:21.424" starttime="20180603 19:11:21.424"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.425" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180603 19:11:21.425" starttime="20180603 19:11:21.424"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.425" starttime="20180603 19:11:21.422"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.426" starttime="20180603 19:11:21.414"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.426" starttime="20180603 19:11:21.413"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.426" starttime="20180603 19:11:21.413"></status>
+</kw>
+<kw type="foritem" name="${index} = 5">
+<kw name="Loop in item">
+<arguments>
+<arg>${index}</arg>
+<arg>${all in csv}</arg>
+</arguments>
+<kw type="for" name="${j} IN RANGE [ 0 | 3 ]">
+<kw type="foritem" name="${j} = 0">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.429" level="INFO">0</msg>
+<status status="PASS" endtime="20180603 19:11:21.429" starttime="20180603 19:11:21.428"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.430" level="INFO">hyundai</msg>
+<status status="PASS" endtime="20180603 19:11:21.430" starttime="20180603 19:11:21.429"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.431" level="INFO">hyundai</msg>
+<status status="PASS" endtime="20180603 19:11:21.431" starttime="20180603 19:11:21.430"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.433" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180603 19:11:21.433" starttime="20180603 19:11:21.432"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.433" starttime="20180603 19:11:21.428"></status>
+</kw>
+<kw type="foritem" name="${j} = 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.434" level="INFO">1</msg>
+<status status="PASS" endtime="20180603 19:11:21.434" starttime="20180603 19:11:21.433"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.436" level="INFO">jaidee</msg>
+<status status="PASS" endtime="20180603 19:11:21.436" starttime="20180603 19:11:21.435"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.437" level="INFO">jaidee</msg>
+<status status="PASS" endtime="20180603 19:11:21.437" starttime="20180603 19:11:21.436"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.438" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180603 19:11:21.438" starttime="20180603 19:11:21.437"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.438" starttime="20180603 19:11:21.433"></status>
+</kw>
+<kw type="foritem" name="${j} = 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.439" level="INFO">2</msg>
+<status status="PASS" endtime="20180603 19:11:21.439" starttime="20180603 19:11:21.439"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.441" level="INFO"></msg>
+<status status="PASS" endtime="20180603 19:11:21.441" starttime="20180603 19:11:21.440"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.443" level="INFO"></msg>
+<status status="PASS" endtime="20180603 19:11:21.443" starttime="20180603 19:11:21.442"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<status status="PASS" endtime="20180603 19:11:21.444" starttime="20180603 19:11:21.443"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.444" starttime="20180603 19:11:21.438"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.444" starttime="20180603 19:11:21.428"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.445" starttime="20180603 19:11:21.427"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.445" starttime="20180603 19:11:21.426"></status>
+</kw>
+<kw type="foritem" name="${index} = 6">
+<kw name="Loop in item">
+<arguments>
+<arg>${index}</arg>
+<arg>${all in csv}</arg>
+</arguments>
+<kw type="for" name="${j} IN RANGE [ 0 | 3 ]">
+<kw type="foritem" name="${j} = 0">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.446" level="INFO">0</msg>
+<status status="PASS" endtime="20180603 19:11:21.446" starttime="20180603 19:11:21.446"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.447" level="INFO"></msg>
+<status status="PASS" endtime="20180603 19:11:21.447" starttime="20180603 19:11:21.446"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.448" level="INFO"></msg>
+<status status="PASS" endtime="20180603 19:11:21.448" starttime="20180603 19:11:21.447"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<status status="PASS" endtime="20180603 19:11:21.450" starttime="20180603 19:11:21.448"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.450" starttime="20180603 19:11:21.446"></status>
+</kw>
+<kw type="foritem" name="${j} = 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.451" level="INFO">1</msg>
+<status status="PASS" endtime="20180603 19:11:21.451" starttime="20180603 19:11:21.451"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.452" level="INFO"></msg>
+<status status="PASS" endtime="20180603 19:11:21.452" starttime="20180603 19:11:21.452"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.453" level="INFO"></msg>
+<status status="PASS" endtime="20180603 19:11:21.453" starttime="20180603 19:11:21.452"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<status status="PASS" endtime="20180603 19:11:21.454" starttime="20180603 19:11:21.453"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.454" starttime="20180603 19:11:21.450"></status>
+</kw>
+<kw type="foritem" name="${j} = 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.455" level="INFO">2</msg>
+<status status="PASS" endtime="20180603 19:11:21.455" starttime="20180603 19:11:21.454"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.455" level="INFO">16</msg>
+<status status="PASS" endtime="20180603 19:11:21.456" starttime="20180603 19:11:21.455"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.456" level="INFO">16</msg>
+<status status="PASS" endtime="20180603 19:11:21.456" starttime="20180603 19:11:21.456"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.459" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'str'&gt;</msg>
+<status status="PASS" endtime="20180603 19:11:21.459" starttime="20180603 19:11:21.457"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.459" starttime="20180603 19:11:21.454"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.459" starttime="20180603 19:11:21.445"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.459" starttime="20180603 19:11:21.445"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.459" starttime="20180603 19:11:21.445"></status>
+</kw>
+<kw type="foritem" name="${index} = 7">
+<kw name="Loop in item">
+<arguments>
+<arg>${index}</arg>
+<arg>${all in csv}</arg>
+</arguments>
+<kw type="for" name="${j} IN RANGE [ 0 | 3 ]">
+<kw type="foritem" name="${j} = 0">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.461" level="INFO">0</msg>
+<status status="PASS" endtime="20180603 19:11:21.461" starttime="20180603 19:11:21.461"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.462" level="INFO"></msg>
+<status status="PASS" endtime="20180603 19:11:21.462" starttime="20180603 19:11:21.461"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.463" level="INFO"></msg>
+<status status="PASS" endtime="20180603 19:11:21.463" starttime="20180603 19:11:21.462"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<status status="PASS" endtime="20180603 19:11:21.464" starttime="20180603 19:11:21.463"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.464" starttime="20180603 19:11:21.460"></status>
+</kw>
+<kw type="foritem" name="${j} = 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.464" level="INFO">1</msg>
+<status status="PASS" endtime="20180603 19:11:21.464" starttime="20180603 19:11:21.464"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.465" level="INFO"></msg>
+<status status="PASS" endtime="20180603 19:11:21.465" starttime="20180603 19:11:21.465"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.466" level="INFO"></msg>
+<status status="PASS" endtime="20180603 19:11:21.466" starttime="20180603 19:11:21.465"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<status status="PASS" endtime="20180603 19:11:21.468" starttime="20180603 19:11:21.467"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.468" starttime="20180603 19:11:21.464"></status>
+</kw>
+<kw type="foritem" name="${j} = 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${j}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.469" level="INFO">2</msg>
+<status status="PASS" endtime="20180603 19:11:21.469" starttime="20180603 19:11:21.468"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.470" level="INFO"></msg>
+<status status="PASS" endtime="20180603 19:11:21.470" starttime="20180603 19:11:21.469"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+</arguments>
+<msg timestamp="20180603 19:11:21.470" level="INFO"></msg>
+<status status="PASS" endtime="20180603 19:11:21.471" starttime="20180603 19:11:21.470"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${listoflists[${index}][${j}]}</arg>
+<arg>${all in csv[${index}][${j}]}</arg>
+</arguments>
+<status status="PASS" endtime="20180603 19:11:21.472" starttime="20180603 19:11:21.471"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.472" starttime="20180603 19:11:21.468"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.472" starttime="20180603 19:11:21.460"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.472" starttime="20180603 19:11:21.460"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.472" starttime="20180603 19:11:21.460"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.472" starttime="20180603 19:11:21.350"></status>
+</kw>
+<status status="PASS" endtime="20180603 19:11:21.472" critical="yes" starttime="20180603 19:11:21.345"></status>
+</test>
+<status status="PASS" endtime="20180603 19:11:21.475" starttime="20180603 19:11:21.271"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="1">Critical Tests</stat>
-<stat fail="0" pass="1">All Tests</stat>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Csv" pass="1">Csv</stat>
+<stat fail="0" id="s1" name="Csv" pass="2">Csv</stat>
 </suite>
 </statistics>
 <errors>

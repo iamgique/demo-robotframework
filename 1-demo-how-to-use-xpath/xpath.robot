@@ -16,3 +16,4 @@ Find XPath
     Wait Until Page Contains    swatch
     Sleep    3s
     [Teardown]    Close Browser
+    
