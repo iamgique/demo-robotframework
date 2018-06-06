@@ -2,6 +2,10 @@
 Library           Selenium2Library
 
 *** Test Cases ***
+Demo test Cases
+    Log    Demo without ride.py
+    Log to console    Demo without ride.py
+
 Find XPath
     Open Browser    https://www.kingpower.com/    Chrome
     Maximize Browser Window

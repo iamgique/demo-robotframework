@@ -15,7 +15,7 @@ Library           String
 *** Variables ***
 ${URL_WEB}        http://std.iconrem.com/v43
 ${BROWSER}        Chrome
-${DELAY}          0
+${DELAY}          1
 ${Username}       kittipoom
 ${Password}       password2
 ${wrong_username}       kitx
